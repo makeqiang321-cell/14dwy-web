@@ -1,0 +1,597 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kingdom of Marionettes — Play Free Online | 14DWY Games</title>
+<meta name="description" content="Play Kingdom of Marionettes free online — a psychological horror visual novel set in an abandoned puppet theater. Survive your night shift as puppets come alive. Multiple endings, yandere characters, no download required.">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://www.14dayswithyou.online/category/kingdom-of-marionettes.html">
+<link rel="dns-prefetch" href="https://static.kingdomofmarionettes.org">
+<link rel="preconnect" href="https://static.kingdomofmarionettes.org" crossorigin>
+<meta property="og:title" content="Kingdom of Marionettes — Play Free Online | 14DWY Games">
+<meta property="og:description" content="Play Kingdom of Marionettes free online — a psychological horror visual novel set in an abandoned puppet theater. Survive your night shift as puppets come alive. Multiple endings, yandere characters, no download required.">
+<meta property="og:url" content="https://www.14dayswithyou.online/category/kingdom-of-marionettes.html">
+<meta property="og:image" content="https://www.14dayswithyou.online/images/games/kingdom/kingdom-cover.webp">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Kingdom of Marionettes — Play Free Online",
+  "description": "Play Kingdom of Marionettes free in your browser. A psychological horror visual novel set in an abandoned puppet theater where a jester puppet waits for you after dark. Multiple endings, yandere themes, and slow-burn atmospheric tension.",
+  "image": "https://www.14dayswithyou.online/images/games/kingdom/kingdom-cover.webp",
+  "author": {"@type": "Organization", "name": "14 Days With You Games"},
+  "datePublished": "2026-05-28",
+  "dateModified": "2026-05-28"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What is Kingdom of Marionettes?", "acceptedAnswer": {"@type": "Answer", "text": "Kingdom of Marionettes is a browser-based psychological horror visual novel set in an abandoned puppet theater. You play as a newly hired night security guard whose simple job — watch the building, keep trespassers out — unravels when the theater's puppets begin to move on their own. Created by Cherry Yan (Thepipiw), the game emphasizes atmospheric tension, character-driven storytelling, and branching choices over jump scares."}},
+    {"@type": "Question", "name": "Is Kingdom of Marionettes free to play?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Kingdom of Marionettes is completely free to play in your browser. There is no download, no installation, and no payment required. A downloadable PC version is also available on itch.io."}},
+    {"@type": "Question", "name": "How many endings does Kingdom of Marionettes have?", "acceptedAnswer": {"@type": "Answer", "text": "The current demo of Kingdom of Marionettes features at least four endings: Good, Bad, Secret, and Hidden. The Good ending requires maintaining high affection (3+) with the jester character Jestyn. The Secret ending involves discovering the King puppet's hidden message and answering 'crownus' at a key moment."}},
+    {"@type": "Question", "name": "Who created Kingdom of Marionettes?", "acceptedAnswer": {"@type": "Answer", "text": "Kingdom of Marionettes was created by Cherry Yan, also known as Thepipiw. The game was developed for the Yandere Game Jam 2026 and has since gained a following for its distinctive puppet theater setting, theatrical character designs, and slow-burn psychological horror."}},
+    {"@type": "Question", "name": "How long does it take to finish Kingdom of Marionettes?", "acceptedAnswer": {"@type": "Answer", "text": "A single playthrough of the Kingdom of Marionettes demo takes approximately 30 to 60 minutes. Seeing all endings, hidden scenes, and character interactions will take several hours of replaying with different dialogue choices and relationship paths."}}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.14dayswithyou.online/"},
+    {"@type": "ListItem", "position": 2, "name": "Horror Games", "item": "https://www.14dayswithyou.online/category/horror.html"},
+    {"@type": "ListItem", "position": 3, "name": "Kingdom of Marionettes", "item": "https://www.14dayswithyou.online/category/kingdom-of-marionettes.html"}
+  ]
+}
+</script>
+<style>
+:root {
+  --bg: #0d0a0d;
+  --surface: #1a141a;
+  --surface2: #241c24;
+  --line: #332433;
+  --text: #e0d8e0;
+  --muted: #8a7a8a;
+  --accent: #e04090;
+  --accent-deep: #c02070;
+  --card-radius: 22px;
+  --w: 1120px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* Nav */
+.top-bar{
+  position: sticky; top: 0; z-index: 50;
+  border-bottom: 1px solid var(--line);
+  background: rgba(13,10,13,0.94);
+  backdrop-filter: blur(12px);
+}
+.top-bar-inner{
+  max-width: var(--w); margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 16px;
+}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.15rem;color:#fff;text-decoration:none;letter-spacing:-0.3px}
+.logo-icon{display:flex;align-items:center;gap:3px;flex-shrink:0}
+.logo-icon svg{display:block}
+.nav-links{display:flex;gap:24px;font-size:.88rem;align-items:center}
+.nav-links a{color:var(--muted);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:#fff}
+.nav-links a.active{color:var(--accent)}
+.nav-dropdown{position:relative}
+.nav-dropdown>a{display:flex;align-items:center;gap:4px}
+.nav-dropdown>a::after{content:'\25BE';font-size:.7rem;margin-top:2px}
+.nav-dropdown-menu{display:none;position:absolute;top:100%;left:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:8px 0;min-width:180px;z-index:60;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+.nav-dropdown:hover .nav-dropdown-menu{display:block}
+.nav-dropdown-menu a{display:block;padding:8px 18px;font-size:.85rem;color:var(--muted);white-space:nowrap}
+.nav-dropdown-menu a:hover{background:var(--surface2);color:#fff}
+
+/* ===== Section Nav ===== */
+.section-nav{border-bottom:1px solid var(--line);background:var(--surface)}
+.section-nav-inner{max-width:var(--w);margin:0 auto;display:flex;gap:6px;padding:10px 16px;overflow-x:auto}
+.section-nav a{flex-shrink:0;padding:6px 16px;border-radius:20px;font-size:.8rem;font-weight:600;color:var(--text);text-decoration:none;transition:all .2s;border:1px solid transparent}
+.section-nav a:hover{color:#fff;background:var(--surface2);border-color:var(--accent)}
+
+/* ===== Shared ===== */
+.section{max-width:var(--w);margin:0 auto;padding:36px 16px}
+.section h2{font-size:1.45rem;color:#fff;margin-bottom:12px;letter-spacing:-0.3px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.section h3{font-size:1rem;color:#fff;margin:20px 0 6px}
+.section p{color:var(--muted);margin-bottom:10px;line-height:1.7}
+.section ul{margin:0 0 14px 18px;color:var(--muted)}
+.section li{margin-bottom:4px;line-height:1.55}
+.section a{color:var(--accent);text-decoration:none}
+.section a:hover{text-decoration:underline}
+
+/* ===== Hero ===== */
+.hero{max-width:var(--w);margin:0 auto;padding:36px 16px 20px}
+.hero-inner{display:flex;align-items:center;gap:36px}
+.hero-text{flex:1;min-width:0}
+.hero-text h1{font-size:2.2rem;color:#fff;letter-spacing:-0.5px;margin-bottom:8px;line-height:1.2}
+.hero-text>p{font-size:1rem;color:var(--muted);line-height:1.6;margin-bottom:14px}
+.hero-badges{display:flex;gap:8px;flex-wrap:wrap}
+.hero-badge{padding:5px 12px;border-radius:20px;font-size:.73rem;font-weight:700;border:1px solid var(--line);background:var(--surface2);color:var(--accent)}
+.hero-img{flex:0 0 340px}
+.hero-img img{width:100%;border-radius:var(--card-radius);border:1px solid var(--line);display:block}
+
+/* ===== Game Embed ===== */
+.play-section{max-width:var(--w);margin:0 auto;padding:0 16px 36px}
+.play-wrapper{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--card-radius);overflow:hidden;max-width:960px;margin:0 auto}
+.play-wrapper:fullscreen{max-width:none;border-radius:0;border:none;background:#000;display:flex;align-items:center;justify-content:center}
+.play-wrapper:-webkit-full-screen{max-width:none;border-radius:0;border:none;background:#000;display:flex;align-items:center;justify-content:center}
+.play-wrapper:-moz-full-screen{max-width:none;border-radius:0;border:none;background:#000;display:flex;align-items:center;justify-content:center}
+.play-inner{position:relative;aspect-ratio:16/10;background:#000}
+.play-wrapper:fullscreen .play-inner{aspect-ratio:auto;width:100vw;height:100vh}
+.play-wrapper:-webkit-full-screen .play-inner{aspect-ratio:auto;width:100vw;height:100vh}
+.play-wrapper:-moz-full-screen .play-inner{aspect-ratio:auto;width:100vw;height:100vh}
+.game-cover{position:absolute;inset:0;z-index:2;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.game-cover img{width:100%;height:100%;object-fit:cover}
+.game-cover-btn{position:absolute;display:flex;flex-direction:column;align-items:center;gap:10px;pointer-events:none}
+.game-cover-btn span{font-size:.85rem;font-weight:700;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.7)}
+.game-cover:hover .game-cover-btn svg circle{stroke:var(--accent);fill:rgba(0,0,0,.7)}
+.play-controls{display:flex;gap:10px;justify-content:center;padding:10px 16px;background:var(--surface);border-top:1px solid var(--line)}
+.play-btn{padding:8px 22px;border-radius:20px;cursor:pointer;font-size:.85rem;font-weight:700;border:1px solid var(--line);background:var(--surface2);color:var(--text);transition:all .2s}
+.play-btn:hover{border-color:var(--accent);color:#fff}
+.play-wrapper:fullscreen .play-controls{position:absolute;bottom:0;left:0;right:0;z-index:10;background:rgba(13,10,13,.85)}
+.play-wrapper:-webkit-full-screen .play-controls{position:absolute;bottom:0;left:0;right:0;z-index:10;background:rgba(13,10,13,.85)}
+.game-loader{display:none;position:absolute;inset:0;z-index:3;background:rgba(0,0,0,.85);flex-direction:column;align-items:center;justify-content:center;gap:16px}
+.game-loader.show{display:flex}
+.game-spinner{width:44px;height:44px;border:3px solid rgba(224,64,144,.2);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite}
+.game-loader span{color:var(--muted);font-size:.85rem}
+@keyframes spin{to{transform:rotate(360deg)}}
+/* ===== Figure ===== */
+.section-figure{margin:16px 0}
+.section-figure img{width:100%;border-radius:16px;border:1px solid var(--line);display:block}
+.section-figure figcaption{font-size:.76rem;color:var(--muted);text-align:center;margin-top:6px}
+
+/* ===== Content Warning ===== */
+.content-warning{background:rgba(224,64,144,.08);border:1px solid rgba(224,64,144,.25);border-radius:14px;padding:14px 18px;margin:16px 0}
+.content-warning p{font-size:.82rem;color:var(--accent);margin:0}
+.content-warning strong{color:#fff}
+
+/* ===== Quote ===== */
+.story-quote{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 24px;margin:16px 0;position:relative}
+.story-quote::before{content:'\201C';font-size:3rem;color:var(--accent);position:absolute;top:0;left:14px;opacity:.25;font-family:Georgia,serif;line-height:1}
+.story-quote p{font-size:.88rem;color:var(--text);font-style:italic;line-height:1.65;padding-left:12px;margin:0}
+.story-quote cite{display:block;margin-top:8px;font-size:.78rem;color:var(--accent);font-style:normal;padding-left:12px}
+
+/* ===== Features Grid ===== */
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.feature-card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;border-top:3px solid var(--accent)}
+.feature-card:nth-child(2){border-top-color:#c878d0}
+.feature-card:nth-child(3){border-top-color:#78b8d0}
+.feature-card:nth-child(4){border-top-color:#d0a840}
+.feature-card:nth-child(5){border-top-color:#78d0a0}
+.feature-card:nth-child(6){border-top-color:#d07878}
+.feature-card h3{font-size:.9rem;color:#fff;margin:0 0 4px}
+.feature-card p{font-size:.78rem;color:var(--muted);line-height:1.5;margin:0}
+
+/* ===== Characters Grid ===== */
+.chars-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
+.char-card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;text-align:center}
+.char-card h3{font-size:.9rem;color:#fff;margin:0 0 4px}
+.char-card .char-role{font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:6px}
+.char-card p{font-size:.78rem;color:var(--muted);line-height:1.5;margin:0}
+
+/* ===== Tips Grid ===== */
+.tips-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
+.tip-card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;gap:14px;align-items:flex-start}
+.tip-num{flex-shrink:0;width:34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;font-size:.82rem;display:flex;align-items:center;justify-content:center}
+.tip-card h3{font-size:.88rem;color:#fff;margin:0 0 4px}
+.tip-card p{font-size:.78rem;color:var(--muted);line-height:1.5;margin:0}
+
+/* ===== Screenshots ===== */
+.screenshots-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
+.screenshots-grid img{width:100%;border-radius:12px;border:1px solid var(--line);display:block;aspect-ratio:16/9;object-fit:cover}
+
+/* ===== FAQ ===== */
+.faq-list{display:flex;flex-direction:column;gap:8px}
+.faq-item{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 18px}
+.faq-item h3{font-size:.88rem;color:#fff;margin:0 0 3px}
+.faq-item p{font-size:.8rem;color:var(--muted);line-height:1.55;margin:0}
+
+/* ===== Related ===== */
+.related-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;max-width:560px}
+.related-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--card-radius);overflow:hidden;text-decoration:none;color:inherit;transition:transform .2s,border-color .2s}
+.related-card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.related-card img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
+.related-body{padding:10px 12px}
+.related-body h3{font-size:.83rem;color:#fff;margin:0}
+.related-body p{font-size:.7rem;color:var(--muted);margin:3px 0 0}
+
+/* ===== Footer ===== */
+footer{border-top:1px solid var(--line);padding:32px 16px 24px;margin-top:28px;text-align:center}
+.footer-inner{max-width:var(--w);margin:0 auto}
+.footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:18px;margin-bottom:14px}
+.footer-links a{color:var(--muted);text-decoration:none;font-size:.82rem;transition:color .2s}
+.footer-links a:hover{color:#fff}
+footer p{color:var(--muted);font-size:.76rem}
+
+/* ===== Responsive ===== */
+@media(max-width:768px){
+  .hero-inner{flex-direction:column-reverse;gap:16px}
+  .hero-img{flex:0 0 auto;max-width:280px;width:100%}
+  .hero-text h1{font-size:1.4rem}
+  .features-grid,.chars-grid,.tips-grid,.screenshots-grid{grid-template-columns:1fr}
+  .related-grid{grid-template-columns:repeat(2,1fr)!important;max-width:100%}
+  .nav-links{display:none}
+}
+@media(min-width:769px) and (max-width:1024px){
+  .hero-img{flex:0 0 240px}.hero-text h1{font-size:1.7rem}
+  .features-grid,.screenshots-grid{grid-template-columns:repeat(2,1fr)}
+  .chars-grid{grid-template-columns:repeat(2,1fr)}
+  .related-grid{grid-template-columns:repeat(2,1fr)!important}
+}
+</style>
+</head>
+<body>
+
+<nav class="top-bar">
+  <div class="top-bar-inner">
+    <a href="../index.html" class="logo"><span class="logo-icon"><svg width="28" height="26" viewBox="0 0 32 26"><path d="M10 23c-5-4-8-7-8-10.5C2 9.5 4.5 7 7.5 7 9 7 10.5 7.8 12 9.5c1.5-1.7 3-2.5 4.5-2.5 3 0 5.5 2.5 5.5 5.5 0 3.5-3 6.5-8 10.5l-2 1.8-2-1.8z" fill="#e04090"/><path d="M23 17c3-3 5-5.5 5-8 0-2.5-2-4.5-4.5-4.5-1.5 0-3 .8-4 2.5" fill="none" stroke="#e04090" stroke-width="1.8" stroke-linecap="round"/></svg></span>14DWY GAMES</a>
+    <div class="nav-links">
+      <a href="../index.html">14DWY</a>
+      <a href="../games.html">Games</a>
+      <div class="nav-dropdown">
+        <a href="#">Categories</a>
+        <div class="nav-dropdown-menu">
+          <a href="horror.html">Horror Games</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="section-nav">
+  <div class="section-nav-inner">
+    <a href="#about">About</a>
+    <a href="#how-to-play">How to Play</a>
+    <a href="#features">Key Features</a>
+    <a href="#tips">Game Tips</a>
+    <a href="#who-likes">Who Likes It</a>
+    <a href="#screenshots">Screenshots</a>
+    <a href="#faq">FAQ</a>
+  </div>
+</div>
+
+<main>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1>Kingdom of Marionettes — Play Free Online</h1>
+      <p>A psychological horror visual novel about a night security guard at an abandoned puppet theater. The puppets are not supposed to move. The jester named <strong>Jestyn</strong> did not get the memo. <strong>Play Kingdom of Marionettes free in your browser now.</strong></p>
+      <div class="hero-badges">
+        <span class="hero-badge">Psychological Horror</span>
+        <span class="hero-badge">Visual Novel</span>
+        <span class="hero-badge">Multiple Endings</span>
+        <span class="hero-badge">Play Free</span>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="../images/games/kingdom/kingdom-cover.webp" alt="Kingdom of Marionettes cover art — dark puppet theater with jester character">
+    </div>
+  </div>
+</header>
+
+<!-- Game Embed -->
+<section class="play-section">
+  <div class="play-wrapper">
+    <div class="play-inner">
+      <div class="game-cover" id="gameCover" onclick="startKingdomGame()">
+        <img src="../images/games/kingdom/kingdom-cover.webp" alt="Kingdom of Marionettes — Click to Play">
+        <div class="game-cover-btn">
+          <svg width="48" height="48" viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="38" stroke="#fff" stroke-width="3" fill="rgba(0,0,0,.55)"/><polygon points="32,24 32,56 58,40" fill="#fff"/></svg>
+          <span>Click to Play</span>
+        </div>
+      </div>
+      <div class="game-loader" id="kingdomLoader">
+        <div class="game-spinner"></div>
+        <span>Loading Kingdom of Marionettes...</span>
+      </div>
+      <iframe id="gameFrame" src="" data-src="https://static.kingdomofmarionettes.org/games/kingdom-of-marionettes/index.html" width="100%" height="100%" allowfullscreen="true" style="position:absolute;inset:0;border:0" onload="document.getElementById('kingdomLoader').classList.remove('show')"></iframe>
+    </div>
+    <div class="play-controls" id="kingdomControls" style="display:none">
+      <button class="play-btn" onclick="openKingdomFullscreen()" title="Fullscreen">Fullscreen</button>
+      <button class="play-btn" onclick="closeKingdomGame()" title="Close">Close</button>
+    </div>
+  </div>
+</section>
+<script>
+function startKingdomGame(){
+  document.getElementById('gameCover').style.display='none';
+  document.getElementById('kingdomLoader').classList.add('show');
+  document.getElementById('gameFrame').src=document.getElementById('gameFrame').getAttribute('data-src');
+  document.getElementById('kingdomControls').style.display='flex';
+}
+function closeKingdomGame(){
+  document.getElementById('gameFrame').src='';
+  document.getElementById('gameCover').style.display='flex';
+  document.getElementById('kingdomControls').style.display='none';
+}
+function openKingdomFullscreen(){
+  var el=document.querySelector('.play-wrapper');
+  var fs=el.requestFullscreen||el.webkitRequestFullscreen||el.mozRequestFullScreen;
+  if(fs){fs.call(el).catch(function(e){console.log(e)})}
+  else{alert('Your browser does not support fullscreen. Try pressing F11.')}
+}
+</script>
+
+<!-- Related -->
+<section class="section">
+  <h2>You Might Also Like</h2>
+  <div class="related-grid" style="grid-template-columns:repeat(3,1fr);max-width:100%">
+    <a class="related-card" href="../index.html">
+      <img src="../images/14dwy/screenshot-1.png" alt="14 Days With You" loading="lazy">
+      <div class="related-body"><h3>14 Days With You</h3><p>Yandere visual novel. Ren has been waiting 15 years for you.</p></div>
+    </a>
+    <a class="related-card" href="laceys-flash-games.html">
+      <img src="../images/games/lacey/lacey-screenshot-1.png" alt="Lacey's Flash Games" loading="lazy">
+      <div class="related-body"><h3>Lacey's Flash Games</h3><p>Four corrupted Flash games hiding a dark secret.</p></div>
+    </a>
+    <a class="related-card" href="../you-make-this-house-a-home.html">
+      <img src="../images/games/you-make-this-house-a-home.jpg" alt="You Make This House a Home" loading="lazy">
+      <div class="related-body"><h3>You Make This House a Home</h3><p>Amnesia. A too-perfect partner. Five days to uncover the truth.</p></div>
+    </a>
+  </div>
+</section>
+
+<!-- Section 1: About -->
+<section class="section">
+  <h2 id="about">About Kingdom of Marionettes</h2>
+
+  <h3>Your First Night at the Theater</h3>
+  <p>You play a security guard hired to watch over a theater that closed years ago. The job listing asked for almost nothing — show up, walk the halls, make sure nobody breaks in. Easy money. The building still has its old puppet collection stored backstage. Wooden figures dressed in faded costumes, arranged on stands. On your first night, you notice the jester puppet in the corner has a sunflower pinned to his collar. You are sure it was not there when you clocked in. <strong>Kingdom of Marionettes</strong> starts quiet. The theater feels empty. But by midnight, the empty feeling starts to feel like being watched. That slow shift from quiet to wrong is what <strong>Kingdom of Marionettes</strong> does best — it never announces the horror, it just lets it seep in.</p>
+
+  <figure class="section-figure">
+    <img src="../images/games/kingdom/screenshot-1.webp" alt="Kingdom of Marionettes gameplay — the dark puppet theater stage" loading="lazy">
+    <figcaption>The theater stage in Kingdom of Marionettes. Velvet curtains, dim light, and puppets that don't stay where you left them.</figcaption>
+  </figure>
+
+  <h3>Who Made It</h3>
+  <p>Cherry Yan, also known as Thepipiw, created <strong>Kingdom of Marionettes</strong> for the Yandere Game Jam 2026. She wanted the game to run in a browser so anyone could play without downloading anything. The game was built as a short demo — one act, roughly an hour per run, but with enough branching paths to keep you coming back. The writing in <strong>Kingdom of Marionettes</strong> focuses on atmosphere. No loud noises, no monsters lunging at the screen. Just a theater getting stranger by the hour, and a jester who talks like he has known you for years.</p>
+
+  <h3>The Puppets You Meet</h3>
+  <p>Not all the puppets in <strong>Kingdom of Marionettes</strong> talk to you at once. Some stay in the background for most of your shift. But each one has a name, a voice, and an opinion about the new guard. Pay attention to how they speak to each other — what they say when they think you are out of earshot. The character writing in <strong>Kingdom of Marionettes</strong> rewards players who treat every line of dialogue as potentially important.</p>
+
+  <div class="chars-grid">
+    <div class="char-card">
+      <div class="char-role">Court Jester</div>
+      <h3>Jestyn</h3>
+      <p>215cm tall. Loves sunflowers. Speaks to you like you are the most interesting thing in the room — and maybe the only thing. Playful one moment, intense the next. He is the first puppet you meet in <strong>Kingdom of Marionettes</strong> and the one you will remember longest.</p>
+    </div>
+    <div class="char-card">
+      <div class="char-role">Knight</div>
+      <h3>Knighter</h3>
+      <p>The biggest puppet in <strong>Kingdom of Marionettes</strong> at 217cm. Carries a sword and talks about honor. He does not trust easily, but once he does, he protects. Watch how he reacts when you talk to the others.</p>
+    </div>
+    <div class="char-card">
+      <div class="char-role">Court Wizard</div>
+      <h3>Wizzy</h3>
+      <p>208cm. His favorite flower is the rose. Quiet compared to the others, but his dialogue holds hints that only make sense on a second or third playthrough. Does not say much. What he does say sticks.</p>
+    </div>
+  </div>
+
+  <aside class="content-warning">
+    <p><strong>Content Warning:</strong> Kingdom of Marionettes contains psychological horror, yandere themes, emotional manipulation, obsessive behavior, and depictions of player character death. The game explores dark romantic dynamics in a horror context. It is intended for mature audiences.</p>
+  </aside>
+</section>
+
+<!-- Section 2: How to Play -->
+<section class="section">
+  <h2 id="how-to-play">How to Play Kingdom of Marionettes</h2>
+  <p><strong>Kingdom of Marionettes</strong> is a visual novel. You click through dialogue, pick from two or three response options, and watch how the characters react. There is no combat, no inventory, no puzzles. The only thing <strong>Kingdom of Marionettes</strong> asks is that you pay attention. Every choice nudges the story in a direction the game never announces. The affection system is hidden. The consequences are not. You will feel them before you understand them. Playing <strong>Kingdom of Marionettes</strong> means living with the results of decisions you did not know you were making.</p>
+
+  <h3>How Choices Work</h3>
+  <p>When you pick what to say, <strong>Kingdom of Marionettes</strong> does not show you a meter or a notification. No "+1 Affection" popup. No morality icon. Instead, the characters simply start treating you differently. Jestyn's tone might shift from warm to cold over the course of a single conversation. A door that was open last time is locked now. A puppet who used to greet you says nothing. The game records how often you are nice to Jestyn, whether you spend time near the stage, and which puppets you talk to first. Then it adjusts everything around those numbers.</p>
+  <ul>
+    <li><strong>What you say</strong> to each puppet changes how much they like you. Jestyn is the most sensitive — his mood colors every scene after your first conversation</li>
+    <li><strong>Where you go</strong> in the theater changes what scenes trigger. Rooms open and close based on time and your earlier choices</li>
+    <li><strong>Playing again</strong> is how the game expects you to find everything. Your second run shows you things you walked right past the first time</li>
+  </ul>
+
+  <h3>Endings You Can Get</h3>
+  <p>The <strong>Kingdom of Marionettes</strong> demo has four known endings. The Good ending needs high affection with Jestyn — keep him at 3 or above and you have a chance. The Bad ending happens when affection drops to 2 or lower. The Secret ending requires finding a hidden message from the King puppet and typing "crownus" when asked. The Hidden ending exists but the community is still figuring out what triggers it. Your first run will probably end badly. That is normal. The game is short so you can try again right away.</p>
+
+  <figure class="section-figure">
+    <img src="../images/games/kingdom/screenshot-2.webp" alt="Kingdom of Marionettes dialogue scene with puppet character" loading="lazy">
+    <figcaption>Dialogue in Kingdom of Marionettes changes depending on your route. A friendly character in one run can feel hostile in the next.</figcaption>
+  </figure>
+</section>
+
+<!-- Section 3: Key Features -->
+<section class="section">
+  <h2 id="features">Key Features of Kingdom of Marionettes</h2>
+  <div class="features-grid">
+    <div class="feature-card">
+      <h3>Slow-Burn Horror</h3>
+      <p>No jump scares. <strong>Kingdom of Marionettes</strong> builds tension through dialogue, small environmental changes, and the growing feeling that something has shifted. The longer you stay in <strong>Kingdom of Marionettes</strong>, the less safe the theater feels.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Puppet Theater Setting</h3>
+      <p>Old velvet curtains, wooden stage floors, marionettes hanging from their strings. The theater in <strong>Kingdom of Marionettes</strong> feels like a real place — dusty, quiet, and full of things that should not be moving. The setting is what makes <strong>Kingdom of Marionettes</strong> stand out from every other browser horror game.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Multiple Endings</h3>
+      <p>Good, Bad, Secret, and Hidden routes. Your choices in <strong>Kingdom of Marionettes</strong> add up silently. The game never tells you which dialogue option mattered. <strong>Kingdom of Marionettes</strong> just shows you the ending you earned and lets you sit with it.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Yandere Horror Romance</h3>
+      <p>Jestyn is the center of <strong>Kingdom of Marionettes</strong>. He likes you. He likes you a lot. And the way he expresses it gets more unsettling the longer you stay in <strong>Kingdom of Marionettes</strong>. The romance and the fear come from the same place.</p>
+    </div>
+    <div class="feature-card">
+      <h3>No Download Needed</h3>
+      <p><strong>Kingdom of Marionettes</strong> runs in your browser. Open the page, click play, done. When you finish a run of <strong>Kingdom of Marionettes</strong>, you can restart in seconds. The short loop makes replaying feel natural rather than like a chore.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Six Distinct Characters</h3>
+      <p>Jestyn, Knighter, Wizzy, Prieston, Farmer, and Crownus. Each puppet in <strong>Kingdom of Marionettes</strong> has their own voice and secrets. Some you talk to often. Others reveal themselves slowly. The cast is small but every member of <strong>Kingdom of Marionettes</strong> earns their place in the story.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Section 4: Game Tips -->
+<section class="section">
+  <h2 id="tips">Game Tips for Kingdom of Marionettes</h2>
+  <p>Your first run of <strong>Kingdom of Marionettes</strong> will probably end badly. The game expects you to fail, learn from it, and try again. <strong>Kingdom of Marionettes</strong> treats failure as part of the experience. Here are six things that help.</p>
+
+  <div class="tips-grid">
+    <div class="tip-card">
+      <span class="tip-num">1</span>
+      <div>
+        <h3>Wear Headphones</h3>
+        <p>The sound does half the work in <strong>Kingdom of Marionettes</strong>. Floorboards creak. Curtains rustle in empty rooms. Jestyn's voice changes when he is about to say something important. Without headphones, you miss most of the cues.</p>
+      </div>
+    </div>
+    <div class="tip-card">
+      <span class="tip-num">2</span>
+      <div>
+        <h3>Pay Attention to Jestyn</h3>
+        <p>Every sentence out of his mouth tells you something about your current standing. A compliment that feels slightly off. A pause before he answers. A nickname that sounded sweet the first time but not the second. Jestyn shows you how he feels. Most players miss it on the first run.</p>
+      </div>
+    </div>
+    <div class="tip-card">
+      <span class="tip-num">3</span>
+      <div>
+        <h3>Replay It</h3>
+        <p>A run of <strong>Kingdom of Marionettes</strong> takes 30 to 60 minutes. The short length is on purpose — the game wants you to go again. Pick different answers. See how the same scene plays out. You will catch things you completely missed before.</p>
+      </div>
+    </div>
+    <div class="tip-card">
+      <span class="tip-num">4</span>
+      <div>
+        <h3>Read Everything</h3>
+        <p><strong>Kingdom of Marionettes</strong> hides clues in small talk. A puppet says something about "the queen" in passing. An hour later, that offhand line explains a scene. Do not skim. The quiet lines matter more than the loud ones.</p>
+      </div>
+    </div>
+    <div class="tip-card">
+      <span class="tip-num">5</span>
+      <div>
+        <h3>Talk to Everyone</h3>
+        <p>Knighter, Wizzy, and the other puppets in <strong>Kingdom of Marionettes</strong> know things Jestyn will not tell you. Spending time with the full cast fills in gaps that make the ending hit harder.</p>
+      </div>
+    </div>
+    <div class="tip-card">
+      <span class="tip-num">6</span>
+      <div>
+        <h3>Find the King Puppet</h3>
+        <p>The Secret ending in <strong>Kingdom of Marionettes</strong> needs you to find a message hidden by the King puppet and answer "crownus" at the right moment. If you feel stuck, check rooms you have not visited in a while. The theater changes while you are away.</p>
+      </div>
+    </div>
+  </div>
+
+  <blockquote class="story-quote">
+    <p>You came back. Most people do not come back. The theater remembers everyone who leaves. It does not forget. Neither do I.</p>
+    <cite>— Jestyn, Kingdom of Marionettes</cite>
+  </blockquote>
+</section>
+
+<!-- Section 5: Who Likes It -->
+<section class="section">
+  <h2 id="who-likes">Who Likes Kingdom of Marionettes</h2>
+  <p><strong>Kingdom of Marionettes</strong> clicked with a specific crowd. If any of these sound like you, the game is probably your thing.</p>
+
+  <h3>Psychological Horror Fans</h3>
+  <p>If you like horror that creeps up on you rather than screaming in your face, <strong>Kingdom of Marionettes</strong> delivers. There are no chase scenes or monster closets. Instead, the theater gets darker, the dialogue gets weirder, and at some point you realize your shoulders have been tense for ten minutes and you did not notice when it started. The horror in <strong>Kingdom of Marionettes</strong> earns its effect through patience — it knows you are already nervous just being alone in a dark building.</p>
+
+  <h3>Visual Novel Readers</h3>
+  <p>A single run of <strong>Kingdom of Marionettes</strong> takes under an hour. You are supposed to play it more than once. Each route shows you new scenes, new dialogue, and new sides of the characters. If you like games where the full picture only comes together after seeing multiple endings, <strong>Kingdom of Marionettes</strong> rewards the time you put in. Few free browser games offer this much narrative density in such a tight package.</p>
+
+  <h3>Yandere Genre Fans</h3>
+  <p>Jestyn is the draw. He is a 215cm jester puppet who treats you like the only person in the world. His affection is real. So is the danger. <strong>Kingdom of Marionettes</strong> plays the yandere dynamic straight — it is not parody or fanservice. The tension between wanting his approval and being afraid of what he will do next is what makes <strong>Kingdom of Marionettes</strong> work. For fans of dark romance, <strong>Kingdom of Marionettes</strong> is one of the strongest examples in browser gaming right now.</p>
+
+  <h3>Indie Game Supporters</h3>
+  <p>One person made <strong>Kingdom of Marionettes</strong> for a game jam. No team, no budget, no publisher. The result is a focused horror experience that does not feel like anything else in your browser. If you like playing games where you can tell a real person had a specific idea and executed it cleanly, <strong>Kingdom of Marionettes</strong> is worth your evening. The fact that <strong>Kingdom of Marionettes</strong> came out of a jam and still delivers this much atmosphere speaks to how tightly designed it is.</p>
+</section>
+
+<!-- Section 6: Screenshots -->
+<section class="section">
+  <h2 id="screenshots">Kingdom of Marionettes Game Screenshots</h2>
+  <p>Here is what <strong>Kingdom of Marionettes</strong> looks like in action. The visual style of <strong>Kingdom of Marionettes</strong> leans into dark theatrical colors — deep reds, wood tones, stage lighting. Every screen feels like a scene from a play where something is about to go wrong.</p>
+
+  <div class="screenshots-grid">
+    <figure class="section-figure">
+      <img src="../images/games/kingdom/screenshot-1.webp" alt="The abandoned puppet theater stage in Kingdom of Marionettes" loading="lazy">
+      <figcaption>The main stage. Curtains drawn, lights low. The first time you see it, the room just looks empty. Later visits feel different.</figcaption>
+    </figure>
+    <figure class="section-figure">
+      <img src="../images/games/kingdom/screenshot-2.webp" alt="Dialogue scene with a puppet character in Kingdom of Marionettes" loading="lazy">
+      <figcaption>A dialogue scene. Most of <strong>Kingdom of Marionettes</strong> happens in conversations like this. The text box is where the horror lives.</figcaption>
+    </figure>
+    <figure class="section-figure">
+      <img src="../images/games/kingdom/screenshot-3.webp" alt="A darker moment in Kingdom of Marionettes gameplay" loading="lazy">
+      <figcaption>Later in the night. The warm lighting from earlier scenes is gone. Whatever was pretending to be normal has stopped.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- Section 7: FAQ -->
+<section class="section">
+  <h2 id="faq">Frequently Asked Questions About Kingdom of Marionettes</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <h3>What is Kingdom of Marionettes?</h3>
+      <p>A free psychological horror visual novel you can play in your browser. You take a night job as a security guard in an old puppet theater. The puppets start moving. One of them — a jester named Jestyn — takes a very personal interest in you. <strong>Kingdom of Marionettes</strong> was made by Cherry Yan for the Yandere Game Jam 2026. The whole experience runs in a browser tab with no download needed.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is Kingdom of Marionettes free?</h3>
+      <p>Yes. <strong>Kingdom of Marionettes</strong> costs nothing. You can play it in your browser without signing up or downloading anything. There is also a downloadable PC version on itch.io if you want to play offline.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How many endings are there?</h3>
+      <p>Four that the community has confirmed for <strong>Kingdom of Marionettes</strong>: Good (keep Jestyn's affection at 3 or above), Bad (affection drops to 2 or lower), Secret (find the King puppet's message and answer "crownus"), and Hidden (exact conditions are still being figured out). Each ending in <strong>Kingdom of Marionettes</strong> shows you different sides of the characters and the theater.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How long does it take to finish?</h3>
+      <p>One route of <strong>Kingdom of Marionettes</strong> takes 30 to 60 minutes. Finding all endings and hidden scenes will take a few hours total. The game is short so you replay it — that is the point of <strong>Kingdom of Marionettes</strong>. Each run teaches you something that makes the next one feel different.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do I need to download anything?</h3>
+      <p>No. <strong>Kingdom of Marionettes</strong> plays right in your browser. Open the page and start playing immediately. A downloadable version of <strong>Kingdom of Marionettes</strong> exists on itch.io if you would rather play offline.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Who are the main characters?</h3>
+      <p>Jestyn is the jester — 215cm, playful, possessive, and the character you interact with most. Knighter is a knight puppet (217cm) who values loyalty. Wizzy is the wizard (208cm), quiet but sharp. There is also Prieston, Farmer, and Crownus — each with their own role in the theater.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is Kingdom of Marionettes a romance game?</h3>
+      <p>It is a horror game first, but the horror comes through a yandere romance. Your relationship with Jestyn drives the story. He cares about you. That care is the scary part. <strong>Kingdom of Marionettes</strong> is not a dating sim — the romance is why the tension works.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="../index.html">14 Days With You</a>
+      <a href="../games.html">All Games</a>
+      <a href="horror.html">Horror Games</a>
+      <a href="laceys-flash-games.html">Lacey's Flash Games</a>
+      <a href="../you-make-this-house-a-home.html">You Make This House a Home</a>
+	      <a href="../privacy-policy.html">Privacy Policy</a>
+	      <a href="../terms-of-service.html">Terms of Service</a>
+    </div>
+    <p>Play Kingdom of Marionettes free online — a psychological horror visual novel where the puppets watch back.</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,814 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>14 Days With You Free Online | Play 14DWY Yandere Visual Novel</title>
+<meta name="description" content="Play 14 Days With You free online — the psychological yandere visual novel with 30+ endings. Guide to Ren, all routes, hidden meters, DLC, and how to download.">
+<meta name="keywords" content="14 Days With You,14DWY,14 Days With You free online,14 days with you game,14 days with you download,14 days with you endings,14 days with you dlc,14 days with you dlc free download,yandere visual novel,Ren,cutiesai">
+<link rel="canonical" href="https://www.14dayswithyou.online/">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="14 Days With You Free Online — Play the Yandere Visual Novel With 30+ Endings">
+<meta property="og:description" content="Ren has pink hair, a soft voice, and has been planning your reunion for 15 years. Free to play. 30+ endings. Here's everything you need to know.">
+<meta property="og:url" content="https://www.14dayswithyou.online/">
+<meta property="og:image" content="https://www.14dayswithyou.online/images/14dwy/header.png">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="14 Days With You Free Online — Play the Yandere Visual Novel With 30+ Endings">
+<meta name="twitter:description" content="Ren has pink hair, a soft voice, and has been planning your reunion for 15 years. Free to play. 30+ endings. Here's everything you need to know.">
+<meta name="twitter:image" content="https://www.14dayswithyou.online/images/14dwy/header.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "14 Days With You Guide — Complete Walkthrough, Endings & Character Guide",
+  "description": "Play 14 Days With You free online. Complete guide to Ren, all 30+ endings, Devotion and Awareness meters explained, DLC info, and how to download.",
+  "datePublished": "2026-05-27",
+  "dateModified": "2026-05-28",
+  "image": "https://www.14dayswithyou.online/images/14dwy/header.png",
+  "author": {"@type": "Organization", "name": "14 Days With You Games"},
+  "publisher": {"@type": "Organization", "name": "14 Days With You Games"}
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "How do I play 14 Days With You for free?", "acceptedAnswer": {"@type": "Answer", "text": "Play 14 Days With You free right here in your browser. Or download from itch.io — name your own price, $0 works. Windows, macOS, Linux."}},
+    {"@type": "Question", "name": "How many endings does 14 Days With You have?", "acceptedAnswer": {"@type": "Answer", "text": "30+ named endings across 4 main routes (Sweet, Neutral, Bitter, Obsessive), 9 secret routes, and a hidden ending found by only 0.7% of players."}},
+    {"@type": "Question", "name": "Who is Ren in 14 Days With You?", "acceptedAnswer": {"@type": "Answer", "text": "Ren is the pink-haired librarian love interest — a yandere who appears sweet and devoted but has been obsessively preparing for the protagonist's return for 15 years."}},
+    {"@type": "Question", "name": "Does 14 Days With You have DLC?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Bonus content — extended scenes, lore documents, side stories, exclusive CGs — is released through Patreon. Much of it eventually rolls into the free public build, so a 14 Days With You DLC free download becomes available through official updates over time."}},
+    {"@type": "Question", "name": "How long is 14 Days With You?", "acceptedAnswer": {"@type": "Answer", "text": "30-100+ hours. One route takes 8-12 hours. Books 1-3 are complete. Book 4 is in development."}},
+    {"@type": "Question", "name": "Is 14 Days With You free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, completely free. The developer confirmed the full version stays free even after release. The 18+ DLC '14 Nights With You' is paid."}},
+    {"@type": "Question", "name": "Does 14 Days With You have jumpscares?", "acceptedAnswer": {"@type": "Answer", "text": "Minor jumpscares exist, but the horror is primarily psychological — atmosphere, surveillance, and slow-burn tension. Full trigger list and Content Filter available."}}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.14dayswithyou.online/"}
+  ]
+}
+</script>
+
+<style>
+:root {
+  --bg: #0d0a0d;
+  --surface: #1a141a;
+  --surface2: #241c24;
+  --line: #332433;
+  --text: #e0d8e0;
+  --muted: #8a7a8a;
+  --accent: #e04090;
+  --accent-deep: #c02070;
+  --pink-900: #9d2050;
+  --pink-950: #5a1030;
+  --ember: #f59e0b;
+  --card-radius: 26px;
+  --w: 880px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* Nav */
+.top-bar{
+  position: sticky; top: 0; z-index: 50;
+  border-bottom: 1px solid var(--line);
+  background: rgba(13,10,13,0.94);
+  backdrop-filter: blur(12px);
+}
+.top-bar-inner{
+  max-width: var(--w); margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 16px;
+}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.15rem;color:#fff;text-decoration:none;letter-spacing:-0.3px}
+.logo-icon{display:flex;align-items:center;gap:3px;flex-shrink:0}
+.logo-icon svg{display:block}
+.nav-links{display:flex;gap:24px;font-size:.88rem}
+.nav-links a{color:var(--muted);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:#fff}
+.nav-dropdown{position:relative}
+.nav-dropdown > a{display:flex;align-items:center;gap:4px}
+.nav-dropdown > a::after{content:'▾';font-size:.7rem;margin-top:2px}
+.nav-dropdown-menu{display:none;position:absolute;top:100%;left:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:8px 0;min-width:180px;z-index:60;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+.nav-dropdown:hover .nav-dropdown-menu{display:block}
+.nav-dropdown-menu a{display:block;padding:8px 18px;font-size:.85rem;color:var(--muted);white-space:nowrap}
+.nav-dropdown-menu a:hover{background:var(--surface2);color:#fff}
+
+/* Hero */
+.hero{max-width:var(--w);margin:40px auto 0;padding:0 16px;text-align:center}
+.hero h1{font-size:2.5rem;line-height:1.25;color:#fff;margin-bottom:12px;letter-spacing:-0.5px}
+.hero p{font-size:1.15rem;color:var(--muted);max-width:620px;margin:0 auto 24px}
+.hero .tags{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:32px}
+.hero .tag{background:var(--surface2);color:var(--accent);padding:5px 14px;border-radius:20px;font-size:.82rem;border:1px solid var(--line)}
+.hero-img{max-width:100%;height:auto;border-radius:var(--card-radius);margin-bottom:28px}
+
+/* Sections */
+section{padding:64px 16px}
+.section-inner{max-width:var(--w);margin:0 auto}
+h2{font-size:1.75rem;color:#fff;margin-bottom:8px;letter-spacing:-0.3px}
+.section-sub{color:var(--muted);font-size:.95rem;margin-bottom:32px}
+
+/* Cards */
+.card-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--card-radius);
+  padding:28px;
+  transition:border-color .3s;
+}
+.card h3{font-size:1.1rem;color:#fff;margin-bottom:8px}
+.card p{color:var(--muted);font-size:.92rem;line-height:1.65}
+.card .num{display:inline-block;width:32px;height:32px;background:var(--accent-deep);color:#fff;border-radius:50%;text-align:center;line-height:32px;font-weight:700;font-size:.85rem;margin-bottom:12px}
+
+/* Feature grid */
+.ft-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.ft-item{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--card-radius);
+  padding:24px 28px;
+  display:flex;gap:16px;align-items:flex-start;
+}
+.ft-icon{font-size:1.6rem;flex-shrink:0}
+.ft-item h3{font-size:1rem;color:#fff;margin-bottom:4px}
+.ft-item p{color:var(--muted);font-size:.88rem;line-height:1.55}
+
+/* Stats */
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat-card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--card-radius);
+  padding:24px;text-align:center;
+}
+.stat-num{font-size:1.6rem;font-weight:800;color:var(--accent)}
+.stat-label{font-size:.82rem;color:var(--muted);margin-top:4px}
+
+/* Screenshots */
+.ss-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.ss-card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:calc(var(--card-radius) - 6px);
+  overflow:hidden;
+}
+.ss-card img{width:100%;height:auto;display:block}
+.ss-label{font-size:.78rem;color:var(--muted);padding:8px 12px;text-align:center}
+
+/* Tips */
+.tip-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.tip-card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--card-radius);
+  padding:24px 28px;
+}
+.tip-card h3{font-size:1rem;color:var(--accent);margin-bottom:8px}
+.tip-card p{color:var(--muted);font-size:.9rem;line-height:1.6}
+
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:4px}
+.faq-q{font-weight:700;color:#fff;font-size:.98rem;padding:14px 0;cursor:default}
+.faq-a{color:var(--muted);font-size:.92rem;line-height:1.7;padding-bottom:20px;border-bottom:1px solid var(--line)}
+
+/* Warning */
+.warn-box{
+  background:var(--pink-950);
+  border:1px solid var(--pink-900);
+  border-radius:var(--card-radius);
+  padding:20px 24px;margin-bottom:32px;
+}
+.warn-box p{color:#f0a0c0;font-size:.9rem;line-height:1.6}
+
+/* Game Embed */
+.game-wrap{max-width:var(--w);margin:0 auto;padding:0 16px}
+.game-box{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--card-radius);
+  overflow:hidden;
+  position:relative;
+}
+.game-box iframe{width:100%;height:560px;border:0;display:block}
+.game-overlay{
+  position:absolute;inset:0;z-index:10;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background:#0a0a0c;
+  cursor:pointer;
+}
+.game-overlay img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;opacity:.35;filter:blur(10px)}
+.game-overlay-content{position:relative;z-index:1;text-align:center}
+.game-overlay-content h3{color:#fff;font-size:1.4rem;margin-bottom:18px;letter-spacing:.5px}
+.game-play-btn{
+  display:inline-block;padding:14px 48px;
+  background:var(--accent);color:#fff;border:none;
+  border-radius:30px;font-size:1.05rem;font-weight:700;
+  cursor:pointer;transition:transform .15s,box-shadow .2s;
+  box-shadow:0 4px 20px rgba(224,64,144,.35);
+}
+.game-play-btn:hover{transform:scale(1.04);box-shadow:0 6px 30px rgba(224,64,144,.5)}
+.game-play-btn:active{transform:scale(.96)}
+.game-label{
+  text-align:center;font-size:.82rem;color:var(--muted);
+  padding:10px 0 32px;
+}
+#homeGameWrapper:fullscreen{display:flex;flex-direction:column;width:100vw;height:100vh;border-radius:0}
+#homeGameWrapper:fullscreen #homeFrame{flex:1;display:flex;flex-direction:column}
+#homeGameWrapper:fullscreen #homeFrame iframe{flex:1;height:100%}
+#homeGameWrapper:-webkit-full-screen{display:flex;flex-direction:column;width:100vw;height:100vh;border-radius:0}
+#homeGameWrapper:-webkit-full-screen #homeFrame{flex:1;display:flex;flex-direction:column}
+#homeGameWrapper:-webkit-full-screen #homeFrame iframe{flex:1;height:100%}
+#homeGameWrapper:-moz-full-screen{display:flex;flex-direction:column;width:100vw;height:100vh;border-radius:0}
+#homeGameWrapper:-moz-full-screen #homeFrame{flex:1;display:flex;flex-direction:column}
+#homeGameWrapper:-moz-full-screen #homeFrame iframe{flex:1;height:100%}
+.game-loader{display:none;position:absolute;inset:0;z-index:3;background:rgba(0,0,0,.85);flex-direction:column;align-items:center;justify-content:center;gap:16px}
+.game-loader.show{display:flex}
+.game-spinner{width:44px;height:44px;border:3px solid rgba(224,64,144,.2);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite}
+.game-loader span{color:var(--muted);font-size:.85rem}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* Single col */
+.single-col{max-width:720px}
+
+/* Footer */
+footer{border-top:1px solid var(--line);padding:40px 16px;margin-top:40px}
+.footer-inner{max-width:var(--w);margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:20px}
+.footer-inner a{color:var(--muted);text-decoration:none;font-size:.88rem}
+.footer-inner a:hover{color:#fff}
+
+@media(max-width:700px){
+  .card-grid,.ft-grid,.stats-row,.tip-grid,.ss-grid{grid-template-columns:1fr}
+  .hero h1{font-size:1.8rem}
+  .nav-links{display:none}
+  .stats-row{grid-template-columns:repeat(2,1fr)}
+  .game-box iframe{height:380px}
+  .game-wrap + div > div{grid-template-columns:repeat(2,1fr)!important}
+}
+</style>
+</head>
+<body>
+
+<!-- Nav -->
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <a href="#" class="logo"><span class="logo-icon"><svg width="28" height="26" viewBox="0 0 32 26"><path d="M10 23c-5-4-8-7-8-10.5C2 9.5 4.5 7 7.5 7 9 7 10.5 7.8 12 9.5c1.5-1.7 3-2.5 4.5-2.5 3 0 5.5 2.5 5.5 5.5 0 3.5-3 6.5-8 10.5l-2 1.8-2-1.8z" fill="#e04090"/><path d="M23 17c3-3 5-5.5 5-8 0-2.5-2-4.5-4.5-4.5-1.5 0-3 .8-4 2.5" fill="none" stroke="#e04090" stroke-width="1.8" stroke-linecap="round"/></svg></span>14DWY GAMES</a>
+    <div class="nav-links">
+      <a href="#play">Play</a>
+      <a href="#about">About</a>
+      <a href="#characters">Characters</a>
+      <a href="#endings">Endings</a>
+      <a href="#dlc-section">DLC</a>
+      <a href="#tips">Tips</a>
+      <a href="#faq">FAQ</a>
+      <div class="nav-dropdown">
+        <a href="#">More Games</a>
+        <div class="nav-dropdown-menu">
+          <a href="games.html">All Games</a>
+          <a href="category/horror.html">Horror Games</a>
+          <a href="category/kingdom-of-marionettes.html">Kingdom of Marionettes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hero -->
+<div class="hero">
+  <img src="images/14dwy/header.png" alt="14 Days With You — Ren and the protagonist" class="hero-img" width="616" height="353" loading="eager">
+  <h1>14 Days With You Free Online — Play the Yandere Visual Novel With 30+ Endings</h1>
+  <p>Ren has pink hair, a soft voice, and has been planning your reunion for 15 years. The <strong>14 Days With You game</strong> is a psychological horror romance — free, 4.9 stars, 5,120 ratings. Here is everything you need to know.</p>
+  <div class="tags">
+    <span class="tag">Free to Play</span>
+    <span class="tag">Yandere Visual Novel</span>
+    <span class="tag">Psychological Horror</span>
+    <span class="tag">30+ Endings</span>
+  </div>
+</div>
+
+<!-- Game Embed -->
+<div class="game-wrap" id="play">
+  <div class="game-box" id="homeGameWrapper" style="position:relative">
+    <div id="homePoster" onclick="startHomeGame()" style="position:relative;cursor:pointer;min-height:480px">
+      <img src="images/14dwy/header.png" alt="14 Days With You" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;filter:blur(8px) brightness(.3);transform:scale(1.05)">
+      <div style="position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:480px;gap:20px;padding:40px 24px">
+        <img src="images/14dwy/screenshot-2.png" alt="14 Days With You" style="max-width:360px;width:100%;height:auto;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,.4)">
+        <div style="width:72px;height:72px;border-radius:50%;background:var(--accent);position:relative;box-shadow:0 4px 24px rgba(224,64,144,.5);display:flex;align-items:center;justify-content:center">
+          <div style="width:0;height:0;border-style:solid;border-width:13px 0 13px 24px;border-color:transparent transparent transparent #fff;margin-left:5px"></div>
+        </div>
+        <span style="color:#fff;font-size:1.1rem;font-weight:700;letter-spacing:1px">点击开始 14 Days With You</span>
+        <p style="color:var(--muted);font-size:.85rem;max-width:420px;text-align:center">A psychological yandere horror visual novel with 30+ endings.<br>Free to play — no download required.</p>
+      </div>
+    </div>
+    <div id="homeFrame" style="display:none;position:relative">
+      <div class="game-loader" id="homeLoader"><div class="game-spinner"></div><span>Loading 14 Days With You...</span></div>
+        <iframe id="homeIframe" src="" data-src="14dwy-web/index.html" style="width:100%;height:600px;border:0;display:block" onload="document.getElementById('homeLoader').classList.remove('show')"></iframe>
+      <div style="display:flex;gap:10px;justify-content:center;padding:12px 16px;background:var(--surface);border-top:1px solid var(--line)">
+        <button onclick="fullscreenHome()" style="padding:8px 22px;border-radius:20px;cursor:pointer;font-size:.85rem;font-weight:700;border:1px solid var(--line);background:var(--surface2);color:var(--text);transition:all .2s" onmouseover="this.style.borderColor='var(--accent)';this.style.color='#fff'" onmouseout="this.style.borderColor='var(--line)';this.style.color='var(--text)'">Fullscreen</button>
+        <button onclick="closeHomeGame()" style="padding:8px 22px;border-radius:20px;cursor:pointer;font-size:.85rem;font-weight:700;border:1px solid var(--line);background:var(--surface2);color:var(--text);transition:all .2s" onmouseover="this.style.borderColor='var(--accent)';this.style.color='#fff'" onmouseout="this.style.borderColor='var(--line)';this.style.color='var(--text)'">Close</button>
+      </div>
+    </div>
+  </div>
+  <div class="game-label">Play 14 Days With You free in your browser. No download. No install.</div>
+</div>
+
+<!-- Similar Games -->
+<div style="max-width:var(--w);margin:0 auto;padding:0 16px 48px">
+  <h3 style="color:#fff;font-size:1.2rem;margin-bottom:12px;text-align:center">You Might Also Like</h3>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:840px;margin:0 auto">
+    <a href="you-make-this-house-a-home.html" style="background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s,transform .2s" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--line)';this.style.transform='none'">
+      <img src="images/games/you-make-this-house-a-home.jpg" alt="You Make This House A Home" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block">
+      <span style="display:block;padding:10px 12px;font-size:.82rem;color:var(--text);font-weight:600">You Make This House A Home</span>
+    </a>
+    <a href="category/laceys-flash-games.html" style="background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s,transform .2s" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--line)';this.style.transform='none'">
+      <img src="images/games/lacey/lacey-screenshot-1.png" alt="Lacey's Flash Games" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block">
+      <span style="display:block;padding:10px 12px;font-size:.82rem;color:var(--text);font-weight:600">Lacey's Flash Games</span>
+    </a>
+    <a href="category/kingdom-of-marionettes.html" style="background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;transition:border-color .2s,transform .2s" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--line)';this.style.transform='none'">
+      <img src="images/games/kingdom/kingdom-cover.webp" alt="Kingdom of Marionettes" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block">
+      <span style="display:block;padding:10px 12px;font-size:.82rem;color:var(--text);font-weight:600">Kingdom of Marionettes</span>
+    </a>
+  </div>
+</div>
+<script>
+function startHomeGame(){
+  var f=document.getElementById('homeIframe');
+  f.src=f.getAttribute('data-src');
+  document.getElementById('homePoster').style.display='none';
+  document.getElementById('homeFrame').style.display='block';
+  document.getElementById('homeLoader').classList.add('show');
+}
+function closeHomeGame(){
+  document.getElementById('homeIframe').src='';
+  document.getElementById('homePoster').style.display='block';
+  document.getElementById('homeFrame').style.display='none';
+}
+function fullscreenHome(){
+  var el=document.getElementById('homeGameWrapper');
+  var fs=el.requestFullscreen||el.webkitRequestFullscreen||el.mozRequestFullScreen||el.msRequestFullscreen;
+  if(fs){fs.call(el).catch(function(){})}
+  else{alert('Please use F11 for fullscreen')}
+}
+</script>
+
+<!-- About -->
+<section id="about">
+  <div class="section-inner">
+    <h2>What Is 14 Days With You</h2>
+    <p class="section-sub">A seaside town, a new job, and a man who has been waiting far too long for you to arrive.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <p>14 Days With You is a free psychological horror visual novel by solo developer <strong>cutiesai</strong>. You move to Corland Bay — a foggy coastal town where nothing much happens — and take a job at the local library. The first few days are quiet. You meet the neighbors. You settle in. It feels like a fresh start.</p>
+        <p style="margin-top:12px">Then Ren shows up. Pink hair, soft voice, works at the library too. He knows your coffee order before you order it. He remembers a book you loved when you were eight. He texts you goodnight every evening. He is gentle and thoughtful and <strong>has been waiting for you for fifteen years</strong>.</p>
+      </div>
+      <div class="card">
+        <p>The <strong>14 Days With You game</strong> launched on itch.io in 2023 and has been updated steadily since. It sits at <strong>4.9 out of 5 stars</strong> from over 5,120 ratings. The Discord server has 80,000 people in it, and they are not there for the library scenes.</p>
+        <p style="margin-top:12px">Built in Ren'Py, 14DWY runs on Windows, macOS, and Linux. A browser version is playable right here. The story is split into four Books. Books 1, 2, and 3 are done. Book 4 is in active development, with early builds on Patreon. The full game stays free after release.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Content Warning -->
+<section style="padding-top:0">
+  <div class="section-inner">
+    <div class="warn-box">
+      <p><strong>Content Warning (18+)</strong> — 14 Days With You contains stalking, violence, gore, murder, emotional abuse, gaslighting, non-con/dub-con themes, and suicide/self-harm in certain endings. For players 18 and older. The developer provides a full trigger list and an optional Content Filter that skips the heaviest scenes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section style="padding-top:0">
+  <div class="section-inner">
+    <h2>What Makes 14 Days With You Different</h2>
+    <p class="section-sub">Most yandere visual novels sprint to the scary part. 14 Days With You walks — and that is why it works.</p>
+
+    <div class="ft-grid">
+      <div class="ft-item">
+        <div class="ft-icon">&#x1F4F1;</div>
+        <div>
+          <h3>In-Game Phone That Actually Matters</h3>
+          <p>Real texts, calls, social media, hacked footage. Skip a message and the game remembers. Reply wrong and an ending locks. Ren's mood changes the music and screen effects in real time.</p>
+        </div>
+      </div>
+      <div class="ft-item">
+        <div class="ft-icon">&#x2696;</div>
+        <div>
+          <h3>Two Hidden Stats Running the Whole Show</h3>
+          <p>Devotion — how much you trust Ren. Awareness — how much you notice what is wrong. You never see the numbers. A Book 1 choice can open or close a scene in Book 3. The system is fully retroactive.</p>
+        </div>
+      </div>
+      <div class="ft-item">
+        <div class="ft-icon">&#x1F5BC;</div>
+        <div>
+          <h3>200+ Hand-Drawn CGs</h3>
+          <p>Warm coffee-shop scenes. Quiet library evenings. And then the kind of images that make you close the game at 2 AM. The art shifts as Ren does. You will know exactly when the mask comes off.</p>
+        </div>
+      </div>
+      <div class="ft-item">
+        <div class="ft-icon">&#x1F500;</div>
+        <div>
+          <h3>30+ Named Endings, 9 Secret Routes</h3>
+          <p>Four surface paths — Sweet, Neutral, Bitter, Obsessive. Nine more hidden under specific phone choices and stat combos. One ending has been found by 0.7% of players. The developer confirmed it exists. That is all anyone knows.</p>
+        </div>
+      </div>
+      <div class="ft-item">
+        <div class="ft-icon">&#x1F399;</div>
+        <div>
+          <h3>Ren and the Protagonist Are Both Voiced</h3>
+          <p>Full voice acting for both leads. Ren's voice is warm, quiet, steady — players call it "disturbingly soothing." You will hear it in your head after you close the game. That is not an exaggeration.</p>
+        </div>
+      </div>
+      <div class="ft-item">
+        <div class="ft-icon">&#x23F1;</div>
+        <div>
+          <h3>30 to 100+ Hours</h3>
+          <p>One route runs 8 to 12 hours. Books 1-3 are out in full. Book 4 is in progress. Completionists chasing every death, every secret, every phone message variant — you are looking at triple digits.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Characters -->
+<section id="characters">
+  <div class="section-inner single-col">
+    <h2>14 Days With You — The Characters</h2>
+    <p class="section-sub">Everyone in Corland Bay knows something. Most of them wish they did not.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3>Ren</h3>
+        <p>Pink-haired librarian. Soft voice. Photographic memory for everything about you. He texts goodnight at the same time every evening. He remembers your childhood books by name. He is kind and attentive and patient and has a second identity — <strong>[REDACTED]</strong> — that the story unravels one thread at a time.</p>
+        <p style="margin-top:10px">The game does not ask whether Ren is dangerous. It asks how long you will pretend he is not. The 80,000 people in the Discord are there because Ren is not a caricature. He is believable. That is what makes him stick.</p>
+      </div>
+      <div class="card">
+        <h3>You</h3>
+        <p>You name yourself. You choose your pronouns and some of your appearance. You come to Corland Bay running from something left behind in the city. The game feeds your backstory in pieces — a detail here, a flashback there. You are not a blank slate.</p>
+        <p style="margin-top:10px">Every reply to Ren, every text you answer or ignore, every time you challenge his too-perfect memory of your habits — the game tracks all of it across all four Books. The weight adds up in ways you do not feel until it is too late.</p>
+      </div>
+      <div class="card">
+        <h3>The People Around You</h3>
+        <p><strong>Your neighbor</strong> was the first to mention it — someone leaving your apartment while you were at work. They do not bring it up again.</p>
+        <p style="margin-top:8px"><strong>Your online friend</strong> has known you for years. Their messages get shorter. More urgent. You stop replying as fast as you used to.</p>
+        <p style="margin-top:8px"><strong>The library staff</strong> — they see Ren come in three times a day. One of your coworkers stops meeting your eyes after the first week.</p>
+      </div>
+      <div class="card">
+        <h3>Corland Bay</h3>
+        <p>The town is gray and damp and quiet after dark. Everyone knows everyone. Nobody asks too many questions. The library — your workplace — is warm and well-lit and slowly becomes the only place you feel safe, which is exactly the problem.</p>
+        <p style="margin-top:10px">The atmosphere is built in the details: foghorns in the distance, the creak of your apartment door at night, your phone lighting up at 2 AM with a text from Ren asking why you are still awake.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How to Play -->
+<section>
+  <div class="section-inner">
+    <h2>How to Play 14 Days With You</h2>
+    <p class="section-sub">Getting 14 Days With You running takes under a minute. Free download or browser — both work.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="num">1</div>
+        <h3>Download From itch.io</h3>
+        <p>Search <strong>14DWY</strong> on itch.io. Click Download Now. Pick a price — <strong>$0 works</strong>. 157MB on PC, 151MB on Mac. Extract and run. No install. No launcher.</p>
+      </div>
+      <div class="card">
+        <div class="num">2</div>
+        <h3>Or Play Right Here in Your Browser</h3>
+        <p>The <strong>14 Days With You download</strong> is optional. Scroll up — the game is embedded above. No account. No install. Click in, start reading. Good if you want to try it before clearing 157MB of disk space.</p>
+      </div>
+      <div class="card">
+        <div class="num">3</div>
+        <h3>Read, Click, Choose</h3>
+        <p>It is a visual novel. Click to advance text. Pick dialogue options when they appear. Every answer nudges the hidden Devotion and Awareness meters. There is no wrong choice — just different hallways in the same dark house.</p>
+      </div>
+      <div class="card">
+        <div class="num">4</div>
+        <h3>Save. Seriously, Save.</h3>
+        <p>Some endings hit with no warning. One bad reply and the screen goes black. Use every save slot. Label them. You will backtrack, and you will be glad you did — the second run shows you things the first run hid on purpose.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Endings -->
+<section id="endings">
+  <div class="section-inner">
+    <h2>14 Days With You Endings — All Routes Explained</h2>
+    <p class="section-sub">Four main paths, nine secret ones, and one <strong>14 Days With You ending</strong> that almost nobody has seen.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3>Sweet Route</h3>
+        <p>High Devotion, low Awareness. You trust Ren. You brush off the red flags. The romance is warm and the horror is quiet — it lives in the spaces between what you see and what you choose not to. The Sweet ending looks happy. Then you replay and realize what you missed.</p>
+      </div>
+      <div class="card">
+        <h3>Neutral Route</h3>
+        <p>Moderate everything. You like Ren but keep a door open. You notice odd things but do not act. The Neutral path has the widest range — bittersweet goodbyes, slow complicity, moments where you almost turn back and do not.</p>
+      </div>
+      <div class="card">
+        <h3>Bitter Route</h3>
+        <p>Low Devotion, high Awareness. You push back. You ask questions. You try to leave. This is where 14 Days With You becomes a horror game. Ren does not handle rejection well. The darkest death endings sit on this path.</p>
+      </div>
+      <div class="card">
+        <h3>Obsessive Route</h3>
+        <p>Maximum Devotion, zero Awareness. You give yourself to him completely. Hardest route to unlock, hardest to sit through. This path goes to the bottom of the story — what Ren has been doing for 15 years, and why.</p>
+      </div>
+      <div class="card">
+        <h3>The 9 Secret Routes</h3>
+        <p>Unlocked by extreme meter values, specific phone reply chains, or choices stacked across multiple Books. These paths show content the main routes never touch — scenes from Ren's perspective, fragments of backstory, context that reframes the entire thing.</p>
+      </div>
+      <div class="card">
+        <h3>The One Nobody Has Found</h3>
+        <p>0.7% of players as of late 2025. The developer says it exists. No hints. Community theory: a precise sequence of phone responses across all three Books, combined with a Devotion-to-Awareness ratio that almost no one hits by accident.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DLC -->
+<section id="dlc-section">
+  <div class="section-inner">
+    <h2>14 Days With You DLC — What's Included</h2>
+    <p class="section-sub">Bonus content drops through Patreon. Here's what you get and whether you need it.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3>Extended Scenes</h3>
+        <p>Extra dialogue and interactions with Ren that deepen his backstory. These scenes don't fit in the main route structure but add meaningful context to his behavior — especially in Books 2 and 3.</p>
+      </div>
+      <div class="card">
+        <h3>Lore Documents</h3>
+        <p>Journal entries, surveillance logs, and in-universe files covering the fifteen years before you arrived in Corland Bay. Community hunters consider these essential for the hidden ending.</p>
+      </div>
+      <div class="card">
+        <h3>Side Stories & Bonus CGs</h3>
+        <p>Vignettes from other characters' perspectives. Exclusive artwork and partially voiced scenes. You see Ren from angles the protagonist never does — and it changes things.</p>
+      </div>
+      <div class="card">
+        <h3>14 Nights With You (18+ DLC)</h3>
+        <p>A separate paid add-on on itch.io. Install it by placing the folder — named exactly <strong>14 Nights With You</strong> — inside the base game's <strong>game</strong> folder. Restart if it doesn't show up.</p>
+      </div>
+    </div>
+
+    <div class="warn-box" style="margin-top:24px">
+      <p><strong>14 Days With You DLC free download — here's the deal.</strong> Patreon subscribers ($5/mo) get DLC content first. After a few months, most of it rolls into the free public build through normal updates. There's no standalone DLC page. Pay for early access. Wait for free. Same content either way.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Tips -->
+<section id="tips">
+  <div class="section-inner">
+    <h2>14 Days With You Tips for New Players</h2>
+    <p class="section-sub">Things I wish someone told me before my first run. No spoilers.</p>
+
+    <div class="tip-grid">
+      <div class="tip-card">
+        <h3>Do not rush the early days</h3>
+        <p>The horror only lands because the game spends hours making you comfortable first. Let the coffee runs and library shifts happen. Let Ren feel safe. The drop is longer when the climb is higher.</p>
+      </div>
+      <div class="tip-card">
+        <h3>Check the phone after every scene</h3>
+        <p>The phone is not decoration. Ignored texts close paths. Missed calls shift routes. Ren notices when you leave him on read. The game logs it.</p>
+      </div>
+      <div class="tip-card">
+        <h3>Save at every choice point</h3>
+        <p>One dialogue click can black-screen you. No warning, no undo. Spread your saves across all slots. Label them. You will need the breadcrumbs.</p>
+      </div>
+      <div class="tip-card">
+        <h3>Your first run shapes every run after</h3>
+        <p>The meters are retroactive. A Book 1 decision can change a Book 3 scene even on a different save file. Knowledge from previous runs makes replaying genuinely different — not just completionist busywork.</p>
+      </div>
+      <div class="tip-card">
+        <h3>Small details are the map</h3>
+        <p>Ren's phrasing. The gap between his texts. How side characters stop mid-sentence when you walk in. The game buries its most important information in things that read like background noise the first time through.</p>
+      </div>
+      <div class="tip-card">
+        <h3>The Content Filter exists for a reason</h3>
+        <p>Full trigger list. Optional filter that skips or softens the worst scenes. Nobody will judge you. Some endings on Bitter and Obsessive go places you might not want to follow.</p>
+      </div>
+      <div class="tip-card">
+        <h3>Join the Discord after one blind run</h3>
+        <p>80,000 people, active threads on every route, theories about Book 4, hidden scene discoveries. But play at least once blind first — the server spoils freely and half the fun is walking into it cold.</p>
+      </div>
+      <div class="tip-card">
+        <h3>Book 4 is on the way</h3>
+        <p>"Forever" is in active development with early builds on Patreon ($5 tier). No fixed release date — updates drop when they're ready. The Discord is the fastest place to hear about new builds.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Players Love -->
+<section>
+  <div class="section-inner">
+    <h2>Why People Keep Coming Back to 14 Days With You</h2>
+    <p class="section-sub">5,120 ratings. 4.9 average. An 80,000-member Discord. This game is doing something right.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3>The slow burn is real</h3>
+        <p>Most yandere games sprint to the scary part. 14DWY gives you warm domestic scenes for hours before the cracks show. By the time Ren's mask slips, you like him. That is the whole trick — and it works because the writing does not cheat. Players consistently say they felt genuinely attached before the dread kicked in.</p>
+      </div>
+      <div class="card">
+        <h3>Ren is a person, not a trope</h3>
+        <p>He is not a knife guy. He is soft-spoken, thoughtful, attentive in ways that feel caring before they feel suffocating. His voice acting gets called "disturbingly soothing" because it is — warm and steady and wrong in a way your brain registers before your conscious mind does. He sticks with you because he is believable.</p>
+      </div>
+      <div class="card">
+        <h3>Replay value that is not padding</h3>
+        <p>The retroactive meter system makes your second run show content your first run literally could not display. Third run strips another layer. Players with 80+ hours still post in Discord about dialogue variants and hidden scenes they just found. This is not a game you finish. You just stop for a while.</p>
+      </div>
+      <div class="card">
+        <h3>The writing does not hold your hand</h3>
+        <p>No musical sting when something is wrong. No character turns to camera and says "that was creepy." The horror lives in gaps — the pause before a text arrives, the way Ren says your name, the silence where a normal person would ask a follow-up question. The game assumes you are paying attention.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quick Facts -->
+<section>
+  <div class="section-inner">
+    <h2>14 Days With You at a Glance</h2>
+    <p class="section-sub">The numbers that matter.</p>
+
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="stat-num">4.9</div>
+        <div class="stat-label">itch.io Rating (5,120+ reviews)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">30+</div>
+        <div class="stat-label">Named Endings</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">200+</div>
+        <div class="stat-label">CG Artworks</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">80K+</div>
+        <div class="stat-label">Discord Members</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">30-100h</div>
+        <div class="stat-label">Total Playtime</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">Free</div>
+        <div class="stat-label">Price (Name Your Own)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">3/4</div>
+        <div class="stat-label">Books Released</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">157MB</div>
+        <div class="stat-label">Download Size (PC)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Screenshots -->
+<section id="screenshots">
+  <div class="section-inner">
+    <h2>14 Days With You Screenshots</h2>
+    <p class="section-sub">Official images — Ren, Corland Bay, and moments from the story.</p>
+
+    <div class="ss-grid">
+      <div class="ss-card">
+        <img src="images/14dwy/screenshot-1.png" alt="Ren in the library — first meeting in 14 Days With You" loading="lazy">
+        <div class="ss-label">The library — where it starts</div>
+      </div>
+      <div class="ss-card">
+        <img src="images/14dwy/screenshot-2.png" alt="Ren close-up dialogue scene in 14 Days With You" loading="lazy">
+        <div class="ss-label">Ren. Soft-spoken. Too attentive.</div>
+      </div>
+      <div class="ss-card">
+        <img src="images/14dwy/screenshot-3.png" alt="Phone text messages from Ren in 14 Days With You" loading="lazy">
+        <div class="ss-label">The phone screen — his texts get longer every night</div>
+      </div>
+      <div class="ss-card">
+        <img src="images/14dwy/screenshot-4.png" alt="Corland Bay seaside scene in 14 Days With You" loading="lazy">
+        <div class="ss-label">Corland Bay. Fog. Quiet streets.</div>
+      </div>
+      <div class="ss-card">
+        <img src="images/14dwy/screenshot-5.png" alt="Sweet route romance CG art in 14 Days With You" loading="lazy">
+        <div class="ss-label">Sweet route — before the cracks show</div>
+      </div>
+      <div class="ss-card">
+        <img src="images/14dwy/screenshot-6.png" alt="Dark scene in 14 Days With You" loading="lazy">
+        <div class="ss-label">This is when you realize</div>
+      </div>
+      <div class="ss-card">
+        <img src="images/14dwy/screenshot-7.png" alt="Dialogue choices in 14 Days With You" loading="lazy">
+        <div class="ss-label">Every answer shifts the meters you cannot see</div>
+      </div>
+      <div class="ss-card">
+        <img src="images/14dwy/screenshot-8.png" alt="Ren CG art in 14 Days With You" loading="lazy">
+        <div class="ss-label">Ren — the deeper you go</div>
+      </div>
+      <div class="ss-card">
+        <img src="images/14dwy/screenshot-9.png" alt="Library workplace scene in 14 Days With You" loading="lazy">
+        <div class="ss-label">Work. Sanctuary. Trap.</div>
+      </div>
+      <div class="ss-card">
+        <img src="images/14dwy/screenshot-10.png" alt="CG artwork in 14 Days With You" loading="lazy">
+        <div class="ss-label">200+ CGs. This is one of the warm ones.</div>
+      </div>
+      <div class="ss-card">
+        <img src="images/14dwy/screenshot-11.png" alt="Route selection in 14 Days With You" loading="lazy">
+        <div class="ss-label">30 endings. No two runs land the same way.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-inner">
+    <h2>14 Days With You FAQ</h2>
+    <p class="section-sub">The questions people actually type into Google about this game.</p>
+
+    <div class="faq-list">
+      <div>
+        <div class="faq-q">How do I play 14 Days With You for free?</div>
+        <div class="faq-a">Scroll up — the game is embedded on this page. Or search <strong>14DWY</strong> on itch.io, click Download Now, set the price to $0. 157MB on PC, 151MB on Mac. Extract and run, no installer. The dev has confirmed the full game stays free.</div>
+      </div>
+      <div>
+        <div class="faq-q">How many endings does 14 Days With You have?</div>
+        <div class="faq-a">Over <strong>30 named endings</strong> plus shorter death variants. Four main routes: Sweet (high Devotion, low Awareness), Neutral (balanced), Bitter (low Devotion, high Awareness), Obsessive (max Devotion). Nine secret routes behind stat combos and phone interactions. One hidden ending — 0.7% of players, confirmed real, no hints given.</div>
+      </div>
+      <div>
+        <div class="faq-q">Who is Ren in 14 Days With You?</div>
+        <div class="faq-a">Ren is the reason people play. Pink-haired librarian. Soft voice, sharp memory, texts you goodnight every night without fail. He has a second name — [REDACTED] — and a second nature the story peels back one layer at a time. The voice acting is a big reason he works — warm, calm, and wrong in a way that creeps up on you.</div>
+      </div>
+      <div>
+        <div class="faq-q">Does 14 Days With You have DLC? How do I get it?</div>
+        <div class="faq-a">Yes — extended scenes, lore documents, side stories, bonus CGs, and the 18+ add-on "14 Nights With You." Released through Patreon first ($5/mo), then rolls into the free public build. So a <strong>14 Days With You DLC free download</strong> happens naturally if you wait for updates. Early access is the only paid part.</div>
+      </div>
+      <div>
+        <div class="faq-q">How do the Devotion and Awareness meters work?</div>
+        <div class="faq-a">They are invisible. You never see the numbers. Devotion tracks how much you trust Ren. Awareness tracks how much you suspect something is off. They are retroactive — a Book 1 choice can unlock or lock a scene in Book 3. Knowledge from past runs changes which choices you make, which changes what the game shows you.</div>
+      </div>
+      <div>
+        <div class="faq-q">How long is 14 Days With You?</div>
+        <div class="faq-a">A single route takes 8 to 12 hours. Books 1-3 are complete: Book 1 (Meeting Ren), Book 2 (Falling Deeper), Book 3 (Point of No Return). Book 4 (Forever) is in active development with early builds on Patreon. Completionists can spend 100+ hours across all routes and secrets.</div>
+      </div>
+      <div>
+        <div class="faq-q">Is 14 Days With You safe for kids?</div>
+        <div class="faq-a">No. Strictly <strong>18+</strong>. Stalking, graphic violence, gore, murder, gaslighting, emotional abuse, non-con/dub-con themes, and on-screen suicide in certain endings. The game has an age gate — click under 18 and it locks you out permanently. Full trigger list and optional Content Filter available.</div>
+      </div>
+      <div>
+        <div class="faq-q">Does 14 Days With You have voice acting?</div>
+        <div class="faq-a">Yes — Ren and the protagonist are fully voiced. Ren's performance gets constant praise. Warm, calm, steady, with something underneath you cannot name. The voice work is one of the main reasons the atmosphere lands as hard as it does.</div>
+      </div>
+      <div>
+        <div class="faq-q">When is Book 4 coming out?</div>
+        <div class="faq-a">No fixed date. Book 4 (Forever) is being worked on now. Early builds on Patreon at the $5 tier. The dev does not follow a schedule — updates drop when they are ready. The Discord (80K+ members) is the fastest place to hear about new builds.</div>
+      </div>
+      <div>
+        <div class="faq-q">Are there fake versions of 14 Days With You?</div>
+        <div class="faq-a">Yes. The developer has warned about fake sites that install malware. Unofficial Android APKs from third-party sites are also dangerous — there is no official Android version. Only download from the official itch.io page or play in your browser here.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <strong style="color:#fff">14 Days With You Guide</strong><br>
+      Play 14 Days With You free online. Fan-made informational page.
+    </div>
+    <div style="display:flex;gap:24px;flex-wrap:wrap;justify-content:center">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

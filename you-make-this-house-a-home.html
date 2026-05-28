@@ -1,0 +1,862 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You Make This House a Home — Play Free Online | 14DWY Games</title>
+<meta name="description" content="You Make This House a Home is a free browser psychological horror visual novel. Wake up with amnesia, trapped in a Victorian house, and uncover the truth about Khol in five days. Complete ending guide, character analysis, play free online.">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://www.14dayswithyou.online/you-make-this-house-a-home.html">
+<link rel="dns-prefetch" href="https://youmakethishouseahome.com">
+<link rel="preconnect" href="https://youmakethishouseahome.com" crossorigin>
+
+<meta property="og:title" content="You Make This House a Home — Free Online Psychological Horror Game">
+<meta property="og:description" content="Wake up with amnesia, trapped in an old house. Khol says he's your partner, but nothing feels right. Five days to uncover the truth. Play free online, no download needed.">
+<meta property="og:image" content="https://www.14dayswithyou.online/images/games/you-make-this-house-a-home.jpg">
+<meta property="og:url" content="https://www.14dayswithyou.online/you-make-this-house-a-home.html">
+<meta property="og:type" content="article">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="You Make This House a Home — Free Online Psychological Horror Game">
+<meta name="twitter:description" content="Wake up with amnesia, trapped in an old house. Khol says he's your partner, but nothing feels right. Five days to uncover the truth. Play free online, no download needed.">
+<meta name="twitter:image" content="https://www.14dayswithyou.online/images/games/you-make-this-house-a-home.jpg">
+
+<style>
+:root {
+  --bg: #0d0a0d;
+  --surface: #1a141a;
+  --surface2: #241c24;
+  --line: #332433;
+  --text: #e0d8e0;
+  --muted: #8a7a8a;
+  --accent: #e04090;
+  --accent-deep: #c02070;
+  --w: 1120px;
+  --content-w: 780px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: var(--text); background: var(--bg);
+  line-height: 1.8; font-size: 16px;
+  position:relative;
+}
+body::before{
+  content:'';position:fixed;top:0;left:0;width:100%;height:100%;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(224,64,144,.04) 0%, transparent 70%),
+    radial-gradient(ellipse at 80% 50%, rgba(192,32,112,.03) 0%, transparent 60%),
+    var(--bg);
+  z-index:-1;pointer-events:none;
+}
+body::after{
+  content:'';position:fixed;top:0;left:0;width:100%;height:100%;
+  background:url('images/games/ymthah-banner.png') no-repeat center top / 800px auto;
+  opacity:.04;z-index:-1;pointer-events:none;
+}
+
+/* Nav */
+.top-bar{
+  position: sticky; top: 0; z-index: 100;
+  border-bottom: 1px solid var(--line);
+  background: rgba(13,10,13,0.95); backdrop-filter: blur(12px);
+}
+.top-bar-inner{
+  max-width: var(--w); margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 16px;
+}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.15rem;color:#fff;text-decoration:none;letter-spacing:-0.3px}
+.logo-icon{display:flex;align-items:center;gap:3px;flex-shrink:0}
+.logo-icon svg{display:block}
+.nav-links{display:flex;gap:24px;font-size:.88rem;align-items:center}
+.nav-links a{color:var(--muted);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:#fff}
+.nav-links a.active{color:var(--accent)}
+.nav-dropdown{position:relative}
+.nav-dropdown > a{display:flex;align-items:center;gap:4px;color:var(--muted);text-decoration:none;font-size:.88rem}
+.nav-dropdown > a::after{content:'▾';font-size:.7rem;margin-top:2px}
+.nav-dropdown-menu{display:none;position:absolute;top:100%;left:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:8px 0;min-width:180px;z-index:60;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+.nav-dropdown:hover .nav-dropdown-menu{display:block}
+.nav-dropdown-menu a{display:block;padding:8px 18px;font-size:.85rem;color:var(--muted);white-space:nowrap;text-decoration:none}
+.nav-dropdown-menu a:hover{background:var(--surface2);color:#fff}
+
+/* ===== Section Nav ===== */
+.section-nav{border-bottom:1px solid var(--line);background:var(--surface)}
+.section-nav-inner{max-width:var(--w);margin:0 auto;display:flex;gap:6px;padding:10px 16px;overflow-x:auto}
+.section-nav a{flex-shrink:0;padding:6px 16px;border-radius:20px;font-size:.8rem;font-weight:600;color:var(--text);text-decoration:none;transition:all .2s;border:1px solid transparent}
+.section-nav a:hover{color:#fff;background:var(--surface2);border-color:var(--accent)}
+
+/* ===== HERO ===== */
+.hero{
+  max-width: var(--w); margin: 0 auto;
+  padding: 48px 16px 40px;
+  display: flex; gap: 40px; align-items: center;
+}
+.hero-img{
+  flex: 0 0 320px;
+  border-radius: 16px; overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 32px rgba(0,0,0,.4);
+}
+.hero-img img{width:100%;height:auto;display:block}
+.hero-info{flex:1;min-width:0}
+.hero-info .tag-row{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+.hero-info .tag{
+  padding:3px 12px;border-radius:16px;
+  font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;
+  background:rgba(224,64,144,.12);color:var(--accent);border:1px solid rgba(224,64,144,.25);
+}
+.hero-info h1{font-size:2.2rem;color:#fff;line-height:1.3;letter-spacing:-0.5px;margin-bottom:10px}
+.hero-info .subtitle{font-size:1.05rem;color:var(--muted);margin-bottom:16px;line-height:1.6}
+.hero-info .rating-row{display:flex;align-items:center;gap:10px;margin-bottom:18px}
+.hero-info .stars{color:#f0a030;font-size:1.1rem;letter-spacing:2px}
+.hero-info .rating-num{color:var(--text);font-weight:700}
+.hero-info .rating-count{color:var(--muted);font-size:.85rem}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.cta-btn{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:13px 28px;border-radius:30px;
+  background:var(--accent);color:#fff;font-weight:700;text-decoration:none;
+  font-size:.95rem;transition:background .2s,transform .2s;
+}
+.cta-btn:hover{background:var(--accent-deep);transform:translateY(-2px)}
+.cta-btn--outline{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:13px 28px;border-radius:30px;
+  border:1px solid var(--accent);color:var(--accent);font-weight:700;text-decoration:none;
+  font-size:.95rem;transition:background .2s;
+}
+.cta-btn--outline:hover{background:rgba(224,64,144,.1)}
+
+/* ===== STATS BAR ===== */
+.stats-bar{
+  max-width: var(--w); margin: 0 auto;
+  padding: 0 16px 28px;
+}
+.stats-bar-inner{
+  display:flex; width:100%;
+  background:var(--surface); border:1px solid var(--line); border-radius:14px;
+  overflow:hidden;
+}
+.stat-item{
+  flex:1; text-align:center; padding:16px 12px;
+  border-right:1px solid var(--line);
+}
+.stat-item:last-child{border-right:none}
+.stat-item .stat-value{font-size:1.1rem;font-weight:800;color:#fff;display:block}
+.stat-item .stat-label{font-size:.75rem;color:var(--muted);margin-top:3px}
+
+/* ===== SECTION ===== */
+.section{max-width:var(--content-w);margin:0 auto;padding:40px 16px}
+.section h2{
+  font-size:1.55rem;color:#fff;margin-bottom:20px;
+  letter-spacing:-0.3px;
+  display:flex;align-items:center;gap:10px;
+}
+.section h3{font-size:1.15rem;color:#fff;margin:24px 0 10px}
+.section p{margin-bottom:14px;color:var(--text);font-size:1rem;line-height:1.85}
+.section strong{color:#fff}
+
+/* Story block */
+.story-block{
+  background:linear-gradient(135deg, rgba(224,64,144,.06) 0%, rgba(13,10,13,0) 60%);
+  border:1px solid var(--line);
+  border-radius:16px;padding:28px 32px;margin-bottom:24px;
+  border-left:4px solid var(--accent);
+  position:relative;
+}
+.story-block::before{
+  content:'"';position:absolute;top:12px;left:18px;
+  font-size:3rem;color:rgba(224,64,144,.15);font-family:Georgia,serif;
+  line-height:1;pointer-events:none;
+}
+.story-block p{color:var(--text);font-size:1.03rem;line-height:2;margin-bottom:10px;position:relative;z-index:1}
+.story-block p:last-child{margin-bottom:0}
+
+/* Confused nav */
+.confused-nav{
+  display:flex;gap:12px;flex-wrap:wrap;margin-top:20px;
+}
+.confused-link{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:11px 22px;border-radius:26px;
+  background:var(--surface);border:1px solid var(--line);
+  color:var(--text);text-decoration:none;font-size:.9rem;font-weight:600;
+  transition:all .25s;
+  box-shadow:0 1px 3px rgba(0,0,0,.2);
+}
+.confused-link:hover{
+  border-color:var(--accent);
+  background:var(--surface2);
+  box-shadow:0 0 0 3px rgba(224,64,144,.1);
+  transform:translateY(-1px);
+}
+
+/* Card */
+.card{
+  background:linear-gradient(145deg, var(--surface) 0%, rgba(26,20,26,.6) 100%);
+  border:1px solid var(--line);
+  border-radius:16px;padding:28px 30px;margin-bottom:20px;
+  box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+.card h3{margin-top:0;font-size:1.2rem}
+.card p{line-height:1.9}
+
+/* Article Image */
+.article-img{
+  margin:28px 0;border-radius:14px;overflow:hidden;
+  border:1px solid var(--line);
+  box-shadow:0 3px 12px rgba(0,0,0,.2);
+  background:var(--surface2);
+}
+.article-img img{width:100%;height:auto;display:block}
+.article-img .img-caption{
+  padding:10px 16px;font-size:.8rem;color:var(--muted);
+  text-align:center;background:var(--surface);
+  border-top:1px solid var(--line);
+}
+
+/* Table */
+.section table{width:100%;border-collapse:collapse;margin:0;font-size:.9rem}
+.section thead th{
+  text-align:left;padding:12px 16px;font-size:.73rem;
+  text-transform:uppercase;letter-spacing:.08em;color:var(--muted);
+  border-bottom:2px solid var(--line);background:rgba(13,10,13,.3);
+}
+.section tbody td{
+  padding:13px 16px;border-bottom:1px solid rgba(51,36,51,.5);
+  color:var(--text);vertical-align:top;line-height:1.7;
+}
+.section tbody tr{transition:background .15s}
+.section tbody tr:hover{background:rgba(224,64,144,.04)}
+
+/* Gallery */
+.gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+
+/* Features */
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.feature-card{
+  background:linear-gradient(160deg, var(--surface) 0%, rgba(26,20,26,.3) 100%);
+  border:1px solid var(--line);border-radius:14px;padding:22px 20px;
+  transition:border-color .2s,transform .2s;
+  box-shadow:0 1px 4px rgba(0,0,0,.12);
+}
+.feature-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.feature-card h4{color:#fff;font-size:.95rem;margin-bottom:6px}
+.feature-card p{color:var(--muted);font-size:.85rem;line-height:1.7;margin:0}
+
+/* Suitability */
+.suit-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:20px}
+.suit-col{
+  background:linear-gradient(160deg, var(--surface) 0%, rgba(26,20,26,.5) 100%);
+  border:1px solid var(--line);border-radius:16px;padding:26px 28px;
+  box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+.suit-col h4{color:#fff;font-size:1.05rem;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.suit-col ul{margin-left:18px;color:var(--text);line-height:2.2;font-size:.93rem}
+.suit-col ul li{padding-left:2px}
+.suit-col.good{border-left:4px solid #4caf84}
+.suit-col.good h4::before{content:'✓';color:#4caf84;font-weight:700}
+.suit-col.bad{border-left:4px solid #c05050}
+.suit-col.bad h4::before{content:'✗';color:#c05050;font-weight:700}
+
+/* Warning */
+.warning-box{
+  background:rgba(224,64,80,.06);
+  border:1px solid rgba(224,64,80,.15);
+  border-radius:14px;padding:20px 24px;margin-bottom:20px;
+  border-left:4px solid rgba(224,64,80,.4);
+}
+.warning-box p{color:var(--text);line-height:1.8;margin:0;font-size:.95rem}
+.warning-box strong{color:#e05060}
+
+/* FAQ */
+.faq-item{
+  background:linear-gradient(135deg, var(--surface) 0%, rgba(26,20,26,.4) 100%);
+  border:1px solid var(--line);
+  border-radius:14px;padding:18px 24px;margin-bottom:12px;
+  transition:border-color .2s,box-shadow .2s;
+}
+.faq-item:hover{
+  border-color:rgba(224,64,144,.25);
+  box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+.faq-item h4{font-size:1rem;color:#fff;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.faq-item h4::before{content:'Q';font-size:.7rem;font-weight:800;color:var(--accent);background:rgba(224,64,144,.15);width:22px;height:22px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+.faq-item p{font-size:.92rem;color:var(--muted);margin:0;padding-left:30px}
+
+/* Play Area */
+.play-area{
+  max-width: var(--w); margin: 0 auto; padding: 0 16px 32px;
+  text-align: center;
+}
+.play-area h2{font-size:1.5rem;color:#fff;margin-bottom:8px}
+.play-area > p{color:var(--muted);margin-bottom:18px}
+.play-wrapper{
+  position:relative;display:inline-block;max-width:100%;
+  border-radius:16px;overflow:hidden;
+  border:1px solid var(--line);
+  box-shadow:0 4px 32px rgba(0,0,0,.5);
+  background:var(--surface2);
+}
+.play-poster{
+  position:relative;cursor:pointer;
+  width:960px;max-width:100%;aspect-ratio:16/10;
+}
+.play-poster-img{
+  width:100%;height:100%;object-fit:cover;display:block;
+}
+.play-poster-overlay{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background:rgba(13,10,13,.5);
+  transition:background .3s;
+}
+.play-poster:hover .play-poster-overlay{
+  background:rgba(13,10,13,.35);
+}
+.play-icon{
+  width:68px;height:68px;border-radius:50%;
+  background:var(--accent);
+  position:relative;
+  box-shadow:0 4px 20px rgba(224,64,144,.4);
+  transition:transform .3s;
+}
+.play-poster:hover .play-icon{transform:scale(1.08)}
+.play-icon::after{
+  content:'';position:absolute;left:55%;top:50%;
+  transform:translate(-50%,-50%);
+  border-style:solid;
+  border-width:12px 0 12px 22px;
+  border-color:transparent transparent transparent #fff;
+}
+.play-poster-overlay span{
+  color:#fff;font-size:1rem;font-weight:700;margin-top:14px;
+  letter-spacing:1px;
+}
+.play-frame{display:inline-block;max-width:100%}
+.play-frame iframe{display:block;max-width:100%;width:960px;height:600px}
+.play-controls{
+  display:flex;gap:10px;justify-content:center;padding:12px 16px;
+  background:var(--surface);border-top:1px solid var(--line);
+}
+.play-btn{
+  padding:8px 22px;border-radius:20px;cursor:pointer;
+  font-size:.85rem;font-weight:700;border:1px solid var(--line);
+  background:var(--surface2);color:var(--text);
+  transition:all .2s;
+}
+.play-btn:hover{border-color:var(--accent);color:#fff;background:var(--surface2)}
+.play-wrapper:fullscreen{display:flex;flex-direction:column;width:100vw;height:100vh;border-radius:0}
+.play-wrapper:fullscreen .play-frame{flex:1;display:flex}
+.play-wrapper:fullscreen .play-frame iframe{flex:1;width:100%;height:100%}
+.play-wrapper:-webkit-full-screen{display:flex;flex-direction:column;width:100vw;height:100vh;border-radius:0}
+.play-wrapper:-webkit-full-screen .play-frame{flex:1;display:flex}
+.play-wrapper:-webkit-full-screen .play-frame iframe{flex:1;width:100%;height:100%}
+.play-wrapper:-moz-full-screen{display:flex;flex-direction:column;width:100vw;height:100vh;border-radius:0}
+.play-wrapper:-moz-full-screen .play-frame{flex:1;display:flex}
+.play-wrapper:-moz-full-screen .play-frame iframe{flex:1;width:100%;height:100%}
+.game-loader{display:none;position:absolute;inset:0;z-index:3;background:rgba(0,0,0,.85);flex-direction:column;align-items:center;justify-content:center;gap:16px}
+.game-loader.show{display:flex}
+.game-spinner{width:44px;height:44px;border:3px solid rgba(224,64,144,.2);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite}
+.game-loader span{color:var(--muted);font-size:.85rem}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* CTA */
+.cta-section{
+  max-width:var(--content-w);margin:0 auto;padding:20px 16px 48px;
+}
+.cta-box{
+  padding:32px;border-radius:16px;
+  background:linear-gradient(135deg, rgba(224,64,144,.1) 0%, rgba(192,32,112,.04) 100%);
+  border:1px solid rgba(224,64,144,.25);text-align:center;
+}
+.cta-box h3{color:#fff;font-size:1.25rem;margin-bottom:8px}
+.cta-box p{color:var(--muted);font-size:.92rem;margin-bottom:16px}
+
+/* Related games */
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+.related-card{
+  background:var(--surface);border:1px solid var(--line);
+  border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;
+  transition:all .25s;
+  box-shadow:0 1px 4px rgba(0,0,0,.12);
+}
+.related-card:hover{
+  border-color:var(--accent);
+  transform:translateY(-3px);
+  box-shadow:0 6px 20px rgba(0,0,0,.3);
+}
+.related-card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.related-card span{display:block;padding:12px 14px;font-size:.85rem;color:var(--text);font-weight:600}
+
+/* Footer */
+.site-footer{
+  border-top:1px solid var(--line);padding:40px 16px;text-align:center;
+  max-width:var(--w);margin:0 auto;
+}
+.site-footer p{color:var(--muted);font-size:.85rem;margin-bottom:4px}
+.site-footer a{color:var(--accent);text-decoration:none}
+.site-footer a:hover{text-decoration:underline}
+
+.back-top{text-align:center;padding:0 0 20px}
+.back-top a{color:var(--muted);font-size:.85rem;text-decoration:none}
+.back-top a:hover{color:var(--accent)}
+
+/* Reviews */
+.review-grid{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:8px}
+.review-card{
+  flex:1;min-width:200px;
+  background:linear-gradient(160deg, var(--surface) 0%, rgba(26,20,26,.4) 100%);
+  border:1px solid var(--line);border-radius:14px;padding:22px 24px;
+  position:relative;
+  box-shadow:0 1px 4px rgba(0,0,0,.12);
+}
+.review-card::before{
+  content:'\201C';display:block;font-size:2.8rem;color:rgba(224,64,144,.12);
+  font-family:Georgia,serif;line-height:1;margin-bottom:6px;
+}
+.review-card p{font-size:.9rem;color:var(--text);font-style:italic;margin:0;line-height:1.7}
+
+@media(max-width:768px){
+  .hero{flex-direction:column;padding-top:28px}
+  .hero-img{flex:0 0 auto;max-width:280px}
+  .hero-info h1{font-size:1.5rem}
+  .section h2{font-size:1.25rem}
+  .nav-links{display:none}
+  .suit-grid{grid-template-columns:1fr}
+  .stats-bar-inner{flex-wrap:wrap}
+  .stat-item{flex:0 0 50%}
+  .related-grid{grid-template-columns:1fr !important}
+  .review-grid{flex-direction:column}
+  .gallery-grid{grid-template-columns:1fr}
+  .feature-grid{grid-template-columns:1fr}
+}
+</style>
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "You Make This House a Home Complete Guide: Endings, Characters, Play Free Online",
+  "description": "You Make This House a Home is a free browser psychological horror visual novel. Wake up with amnesia, trapped in a Victorian house, and uncover the truth about Khol in five days.",
+  "image": "https://www.14dayswithyou.online/images/games/you-make-this-house-a-home.jpg",
+  "author": {"@type": "Organization", "name": "Games Hub"},
+  "datePublished": "2026-05-27",
+  "dateModified": "2026-05-28",
+  "publisher": {"@type": "Organization", "name": "Games Hub"},
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.14dayswithyou.online/you-make-this-house-a-home.html"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Is You Make This House a Home free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The browser version is completely free. The desktop version on itch.io can be downloaded for $0, or you can pay what you want to support the developer."}},
+    {"@type": "Question", "name": "How long is You Make This House a Home?", "acceptedAnswer": {"@type": "Answer", "text": "One playthrough takes about 2-4 hours. Collecting all endings takes around 10-15 hours."}},
+    {"@type": "Question", "name": "Does You Make This House a Home have jumpscares?", "acceptedAnswer": {"@type": "Answer", "text": "No. The horror comes from atmosphere, dialogue, and the helplessness of waking up every day with your memories wiped. There are no sudden monster pop-ups."}},
+    {"@type": "Question", "name": "How many endings does You Make This House a Home have?", "acceptedAnswer": {"@type": "Answer", "text": "The community has found at least 6 routes, including Submission, Escape, Truth, Confrontation, Loop, and the True Ending. The developer has never confirmed an official number."}},
+    {"@type": "Question", "name": "Is Khol a villain?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on how you play, and how you think. He comes from a species that mates for life, and he gave up eating humans for you. He imprisoned you — that's a fact. He's also starving himself for you — that's also a fact."}},
+    {"@type": "Question", "name": "Can you romance Zeke?", "acceptedAnswer": {"@type": "Answer", "text": "No. The developer has confirmed Zeke is not a romanceable character. He has feelings for Khol, not the protagonist. There is no love triangle route."}},
+    {"@type": "Question", "name": "Is You Make This House a Home a dating sim?", "acceptedAnswer": {"@type": "Answer", "text": "No. It has romantic elements, but at its core it's psychological horror and mystery. Khol's love and his control are two sides of the same coin."}},
+    {"@type": "Question", "name": "Can You Make This House a Home be played on mobile?", "acceptedAnswer": {"@type": "Answer", "text": "The browser version works on mobile browsers. Unofficial Android APKs exist but are not maintained by the developer — download at your own risk."}},
+    {"@type": "Question", "name": "Can you customize the protagonist in You Make This House a Home?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You can set your own name and choose he/she/they pronouns. Khol and other characters will address you accordingly throughout the game."}},
+    {"@type": "Question", "name": "What content warnings does You Make This House a Home have?", "acceptedAnswer": {"@type": "Answer", "text": "Drugging, memory manipulation, emotional abuse, gaslighting, imprisonment, non-human body horror. Not recommended for players under 16. Players with trauma from controlling relationships should assess their state carefully before playing."}}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.14dayswithyou.online/"},
+    {"@type": "ListItem", "position": 2, "name": "Horror Games", "item": "https://www.14dayswithyou.online/category/horror.html"},
+    {"@type": "ListItem", "position": 3, "name": "You Make This House a Home", "item": "https://www.14dayswithyou.online/you-make-this-house-a-home.html"}
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ===== Top Nav ===== -->
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <a href="index.html" class="logo"><span class="logo-icon"><svg width="28" height="26" viewBox="0 0 32 26"><path d="M10 23c-5-4-8-7-8-10.5C2 9.5 4.5 7 7.5 7 9 7 10.5 7.8 12 9.5c1.5-1.7 3-2.5 4.5-2.5 3 0 5.5 2.5 5.5 5.5 0 3.5-3 6.5-8 10.5l-2 1.8-2-1.8z" fill="#e04090"/><path d="M23 17c3-3 5-5.5 5-8 0-2.5-2-4.5-4.5-4.5-1.5 0-3 .8-4 2.5" fill="none" stroke="#e04090" stroke-width="1.8" stroke-linecap="round"/></svg></span>14DWY GAMES</a>
+    <div class="nav-links">
+      <a href="index.html">14DWY</a>
+      <a href="games.html">All Games</a>
+      <div class="nav-dropdown">
+        <a href="#">Categories</a>
+        <div class="nav-dropdown-menu">
+          <a href="category/horror.html">Horror Games</a>
+          <a href="category/kingdom-of-marionettes.html">Kingdom of Marionettes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-nav">
+  <div class="section-nav-inner">
+    <a href="#guide">Story</a>
+    <a href="#khol">Khol</a>
+    <a href="#zeke">Zeke</a>
+    <a href="#endings">Endings</a>
+    <a href="#faq">FAQ</a>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<div class="hero">
+  <div class="hero-img">
+    <img src="images/games/you-make-this-house-a-home.jpg" alt="You Make This House a Home cover — Khol in a dim living room under warm lamp light">
+  </div>
+  <div class="hero-info">
+    <div class="tag-row">
+      <span class="tag">Psychological Horror</span>
+      <span class="tag">Visual Novel</span>
+      <span class="tag">Free Online</span>
+    </div>
+    <h1>You Make This House a Home — Free Online Psychological Horror Game</h1>
+    <p class="subtitle">You wake up and remember nothing. Khol says he's your partner, says your anniversary is five days away. He makes you breakfast and keeps the house spotless. Everything looks normal — except you can't remember a single thing.</p>
+    <div class="rating-row">
+      <span class="stars">★★★★★</span>
+      <span class="rating-num">4.6 / 5</span>
+      <span class="rating-count">· Community rating</span>
+    </div>
+    <div class="hero-btns">
+      <a href="#play" class="cta-btn">Play Free Online</a>
+      <a href="#guide" class="cta-btn--outline">Read Full Guide</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Article Summary ===== -->
+<div class="section" style="padding-top:0">
+  <div class="card" style="background:linear-gradient(135deg,rgba(224,64,144,.06) 0%,rgba(13,10,13,0) 100%);border-left:4px solid var(--accent)">
+    <p style="margin:0;color:var(--muted);font-size:.92rem;line-height:1.8"><strong style="color:var(--accent)">Summary:</strong> You Make This House a Home is a <strong>free psychological horror visual novel</strong> by indie developer JULIAN. It runs directly in your browser — no download needed. This guide covers <strong>every ending route, deep dives on Khol and Zeke, hidden stat mechanics, platform comparisons, and frequently asked questions</strong> — so you'll know whether You Make This House a Home is worth your 2-4 hours.</p>
+  </div>
+</div>
+
+<!-- ===== Quick Stats ===== -->
+<div class="stats-bar">
+  <div class="stats-bar-inner">
+    <div class="stat-item"><span class="stat-value">Free</span><span class="stat-label">Price</span></div>
+    <div class="stat-item"><span class="stat-value">2-4 Hours</span><span class="stat-label">Per Playthrough</span></div>
+    <div class="stat-item"><span class="stat-value">6 Routes</span><span class="stat-label">Endings</span></div>
+    <div class="stat-item"><span class="stat-value">Browser</span><span class="stat-label">Platform</span></div>
+    <div class="stat-item"><span class="stat-value">16+</span><span class="stat-label">Recommended Age</span></div>
+  </div>
+</div>
+
+<!-- ===== Player Reviews ===== -->
+<div class="section">
+  <div class="review-grid">
+    <div class="review-card"><p>"The atmosphere is genuinely unsettling. Not the kind of horror where something jumps out at you — the kind where you start doubting your own memory."</p></div>
+    <div class="review-card"><p>"Pretty short, but I couldn't stop thinking about this game for days after finishing it."</p></div>
+    <div class="review-card"><p>"The second playthrough hits completely different. The same lines of dialogue, once you know the truth — chills."</p></div>
+  </div>
+</div>
+
+<!-- ===== Lost After Your First Run? ===== -->
+<div class="section">
+  <h2>You Make This House a Home Story Guide — Lost After Your First Run?</h2>
+  <p>After one playthrough, most people are left with questions. What exactly is Khol? Which ending is the real one? Jump to the sections below — we'll break the whole story down.</p>
+  <div class="confused-nav">
+    <a href="#khol" class="confused-link">What is Khol?</a>
+    <a href="#zeke" class="confused-link">Who is Zeke?</a>
+    <a href="#endings" class="confused-link">All Ending Routes</a>
+    <a href="#faq" class="confused-link">FAQ</a>
+  </div>
+</div>
+
+<!-- ===== Play Online ===== -->
+<div class="play-area" id="play">
+  <h2>You Make This House a Home — Play Free Online, No Download</h2>
+  <p>No install, no launcher. Runs right in your browser.</p>
+  <div class="play-wrapper" id="playWrapper">
+    <div class="play-poster" id="playPoster" onclick="startGame()">
+      <img src="images/games/you-make-this-house-a-home.jpg" alt="You Make This House a Home game cover" class="play-poster-img">
+      <div class="play-poster-overlay">
+        <div class="play-icon"></div>
+        <span>Click to Play</span>
+      </div>
+    </div>
+    <div class="play-frame" id="playFrame" style="display:none">
+      <div class="game-loader" id="ymthahLoader"><div class="game-spinner"></div><span>Loading You Make This House a Home...</span></div>
+      <iframe id="gameIframe" frameborder="0" src="" data-src="https://youmakethishouseahome.com/YouMakeThisHouseaHome-1.0-web/index.html" width="960" height="600" allowfullscreen="true" allow="autoplay; fullscreen; gamepad" onload="document.getElementById('ymthahLoader').classList.remove('show')"><a href="https://jul1xan-productions.itch.io/you-make-this-house-a-home" target="_blank" rel="noopener">You Make This House a Home by JULIAN</a></iframe>
+    </div>
+    <div class="play-controls" id="playControls" style="display:none">
+      <button class="play-btn" onclick="openFullscreen()" title="Fullscreen mode">Fullscreen</button>
+      <button class="play-btn" onclick="closeGame()" title="Close game">Close</button>
+    </div>
+  </div>
+  <script>
+    function startGame(){
+      var iframe=document.getElementById('gameIframe');
+      iframe.src=iframe.getAttribute('data-src');
+      document.getElementById('playPoster').style.display='none';
+      document.getElementById('playFrame').style.display='block';
+      document.getElementById('playControls').style.display='flex';
+      document.getElementById('ymthahLoader').classList.add('show');
+    }
+    function closeGame(){
+      document.getElementById('gameIframe').src='';
+      document.getElementById('playPoster').style.display='block';
+      document.getElementById('playFrame').style.display='none';
+      document.getElementById('playControls').style.display='none';
+    }
+    function openFullscreen(){
+      var el=document.getElementById('playWrapper');
+      var fs=el.requestFullscreen||el.webkitRequestFullscreen||el.mozRequestFullScreen||el.msRequestFullscreen;
+      if(fs){fs.call(el).catch(function(e){console.log(e)})}
+      else{alert('Your browser does not support fullscreen. Try pressing F11.')}
+    }
+  </script>
+</div>
+
+<!-- ===== You Might Also Like ===== -->
+<div class="section">
+  <h2>You Might Also Like</h2>
+  <div class="related-grid" style="grid-template-columns:repeat(3,1fr);max-width:100%">
+    <a href="index.html" class="related-card">
+      <img src="images/14dwy/screenshot-1.png" alt="14 Days With You" loading="lazy">
+      <span>14 Days With You</span>
+    </a>
+    <a href="category/laceys-flash-games.html" class="related-card">
+      <img src="images/games/lacey/lacey-screenshot-1.png" alt="Lacey's Flash Games" loading="lazy">
+      <span>Lacey's Flash Games</span>
+    </a>
+    <a href="category/kingdom-of-marionettes.html" class="related-card">
+      <img src="images/games/kingdom/kingdom-cover.webp" alt="Kingdom of Marionettes" loading="lazy">
+      <span>Kingdom of Marionettes</span>
+    </a>
+  </div>
+</div>
+
+<!-- ===== Story Opening ===== -->
+<div class="section" id="guide">
+  <h2>You Make This House a Home Story — How It All Begins</h2>
+  <div class="story-block">
+    <p>You open your eyes. Morning light falls across the ceiling of a Victorian house, showing old water stains. You don't know your name. You don't know what city this is. You look in the mirror and the face staring back means nothing to you.</p>
+    <p>A man with brown hair sits beside the bed, smiling. He says his name is <strong>Khol</strong>. He says you've lived together for a long time. He says your anniversary is five days away.</p>
+    <p>He brings you breakfast. The house is immaculate — every item placed just so. Everything looks warm and normal. Except your mind is completely blank.</p>
+    <p>This is how <strong>You Make This House a Home</strong> starts. It's not the kind of horror game where monsters chase you through blood-splattered hallways. It asks you to walk in on your own, step by step, until you realize the cage door was always open — you just never thought to run.</p>
+  </div>
+</div>
+
+<!-- ===== Khol ===== -->
+<div class="section" id="khol">
+  <h2>You Make This House a Home Character Guide — Khol Is Not Human, But He Loves You</h2>
+  <p>The entire story of <strong>You Make This House a Home</strong> rests on Khol's shoulders. If this character didn't work, the game would collapse. He works.</p>
+  <div class="card">
+    <h3 style="margin-top:0">What Khol Actually Is</h3>
+    <p>Khol is <strong>not human</strong>. He belongs to a species that bonds with exactly one partner for life. Once that bond is formed, it never changes. Sounds romantic — until you understand what it actually means.</p>
+    <p>His species naturally feeds on humans. But after you met him, you once casually said "that's disgusting," and he actually stopped. The cost is that his body is breaking down from the inside. The half-human, half-monster appearance you see in You Make This House a Home — he's not trying to scare you. He's starving himself for you.</p>
+    <p>This is what makes <strong>You Make This House a Home</strong> so deeply unsettling. Khol isn't the classic villain who cackles while locking you in a basement. He genuinely, one hundred percent believes he is loving you. The drugs mixed into your meals every day, the diaries hidden deep in the wardrobe, the doors that won't open — in his mind, this isn't imprisonment. It's caretaking. He thinks he's building the two of you a home.</p>
+    <p>Is he the abuser? Yes. Is he also the victim? Yes. And <strong>You Make This House a Home</strong> never tells you the answer. That part is yours.</p>
+  </div>
+</div>
+
+<!-- ===== Zeke ===== -->
+<div class="section" id="zeke">
+  <h2>You Make This House a Home Character Guide — Zeke, the One Who Knows Too Much</h2>
+  <div class="card">
+    <h3 style="margin-top:0">Zeke and Khol's History</h3>
+    <p>Zeke and Khol are the same species. They grew up together. You know the feeling of being in love with your best friend for years and never finding the courage to say it? That's Zeke. He's always been in love with Khol.</p>
+    <p>So when you first showed up — two years ago, outside some bar, Khol noticing someone was following you — Zeke wanted nothing to do with you. Not because he dislikes you personally. Because you got the one thing he'll never have.</p>
+    <p>But time has its own logic. As <strong>You Make This House a Home</strong> unfolds, Zeke becomes the only person in that old house you can somewhat trust. He knows what Khol is hiding from you. His loyalties are torn: on one side, the brother he grew up with. On the other, the victim that brother is holding captive.</p>
+    <p>The developer has confirmed it: <strong>Zeke is not a romance option</strong>. There is no love triangle route. No "choose Khol or Zeke" drama. But even without a romance path, Zeke's weight in this game is every bit as heavy as Khol's.</p>
+  </div>
+</div>
+
+<!-- ===== How to Play ===== -->
+<div class="section">
+  <h2>How to Play You Make This House a Home</h2>
+  <p><strong>You Make This House a Home</strong> spans five days. Each day you wake up and have four types of actions to choose from:</p>
+  <div class="card" style="padding:0;overflow:hidden">
+    <table style="margin:0">
+      <thead><tr><th>Activity</th><th>What You Do</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Explore Rooms</strong></td><td>The house has over a dozen rooms — study, bedroom, basement, storage — each corner may hide clues about your past</td></tr>
+        <tr><td><strong>Touch Memory Fragments</strong></td><td>Certain objects trigger flashbacks — the only window in You Make This House a Home through which you can glimpse who you used to be</td></tr>
+        <tr><td><strong>Dialogue Choices</strong></td><td>Every conversation with Khol quietly shifts hidden stats, changing how he treats you and what he does next</td></tr>
+        <tr><td><strong>Solve Puzzles</strong></td><td>Locked cabinets, torn letters, a broken tape recorder — find the pieces and put them back together</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <h3>Hidden Stat System</h3>
+  <p>You won't see a progress bar. <strong>You Make This House a Home</strong> doesn't give you one. Behind the scenes, a kindness / hatred value system is running. You can only feel the numbers shifting through Khol's micro-expressions and changes in tone — he suddenly turns cold, or gets clingier than usual, or a dialogue option that was available before is now grayed out.</p>
+  <h3>The Cruelest Mechanic: Daily Memory Reset</h3>
+  <p>Every morning you wake up, and the memories you barely pieced together the day before have gone fuzzy again. You'd think it's just the game being difficult. It's not. <strong>Khol has been drugging your food — and mixing in strands of his own hair.</strong> He needs you to not remember. Because someone who can't remember won't try to leave.</p>
+</div>
+
+<!-- ===== Screenshots ===== -->
+<div class="section">
+  <h2>You Make This House a Home Screenshots — Hand-Drawn by the Developer</h2>
+  <p>All backgrounds, characters, and CGs are hand-drawn by solo developer JULIAN. These are actual in-game screenshots:</p>
+  <div class="gallery-grid">
+    <div class="article-img" style="margin:0">
+      <img src="images/games/ymthah-screenshot-1.png" alt="You Make This House a Home screenshot 1" loading="lazy">
+    </div>
+    <div class="article-img" style="margin:0">
+      <img src="images/games/ymthah-screenshot-2.png" alt="You Make This House a Home screenshot 2" loading="lazy">
+    </div>
+    <div class="article-img" style="margin:0">
+      <img src="images/games/ymthah-screenshot-3.png" alt="You Make This House a Home screenshot 3" loading="lazy">
+    </div>
+    <div class="article-img" style="margin:0">
+      <img src="images/games/ymthah-screenshot-4.png" alt="You Make This House a Home screenshot 4" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<!-- ===== Endings ===== -->
+<div class="section" id="endings">
+  <h2>You Make This House a Home — All Six Ending Routes</h2>
+  <p>There's no "affection meter" to grind in <strong>You Make This House a Home</strong>. Whether Khol lets you go doesn't depend on how much you "like" him. It depends on what you choose — trust him or expose him, submit or resist, search every corner or pretend you didn't see.</p>
+  <div class="card" style="padding:0;overflow:hidden">
+    <table style="margin:0">
+      <thead><tr><th>Ending</th><th>How to Trigger</th><th>What Happens</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Submission</strong><br><span style="font-size:.78rem;color:var(--muted)">A peaceful cage</span></td>
+          <td>Obey completely. Don't ask questions, don't search, avoid the basement and the diaries</td>
+          <td>You stay. Khol gets everything he wanted. Whether you chose this freely or the drugs chose for you — nobody can say for sure.</td>
+        </tr>
+        <tr>
+          <td><strong>Escape</strong></td>
+          <td>Gather clues quietly, don't provoke Khol, leave on Day 5</td>
+          <td>You make it out. But who you are and where you came from — you'll probably never know.</td>
+        </tr>
+        <tr>
+          <td><strong>Full Truth</strong></td>
+          <td>Find every clue, confront Khol directly</td>
+          <td>You learn everything. What Khol really is. Everything he did to you. Your own past. And then you choose to stay. Not because drugs are controlling you — because you actually want to.</td>
+        </tr>
+        <tr>
+          <td><strong>Confrontation</strong></td>
+          <td>Resist Khol at every turn, reject all intimacy, tear every mask off</td>
+          <td>He loses control completely. You both go somewhere irreversible together.</td>
+        </tr>
+        <tr>
+          <td><strong>Memory Loop</strong></td>
+          <td>Find some clues but not all, waver between choices, never commit to a single path</td>
+          <td>Day 5 ends. Then Day 1 begins again. Your memory is wiped once more. You're trapped in this house, in this cycle, forever.</td>
+        </tr>
+        <tr>
+          <td><strong>True Ending</strong></td>
+          <td>Collect all clues, stay calm in conversations, neither fully submit nor fully resist</td>
+          <td>No spoilers for this one. This is the ending you can only see by playing it yourself.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="margin-top:14px"><strong>Tip:</strong> Some endings only make sense on a second playthrough. By then you know what Khol has been doing to your memory. The same line of dialogue, heard the first time versus the second — they're two completely different things.</p>
+</div>
+
+<!-- ===== Key Features ===== -->
+<div class="section">
+  <h2>You Make This House a Home — Key Features</h2>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <div class="feature-icon"></div>
+      <h4>Fully Customizable Protagonist</h4>
+      <p>Choose your own name and pick from he / she / they pronouns. Khol and other characters will address you according to your settings throughout the game.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon"></div>
+      <h4>Solo Developer, Hand-Drawn Art</h4>
+      <p>All backgrounds, character sprites, and CGs are drawn entirely by JULIAN (jul1xan-productions). A unified art style with no outsourcing.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon"></div>
+      <h4>16,000+ Words, 90,000+ Characters</h4>
+      <p>The current demo already has two main story routes. There is no official final ending — the story is still being updated.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon"></div>
+      <h4>Hidden Stats, No Progress Bars</h4>
+      <p>No visible affection numbers. Khol's attitude shifts are buried in the subtleties of his dialogue — you have to feel them out yourself.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon"></div>
+      <h4>Free to Play Online, No Download Needed</h4>
+      <p>Open in your browser and play on itch.io. Also available for Windows / Mac / Linux desktop download — pay what you want to support the developer.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon"></div>
+      <h4>Actively Being Updated</h4>
+      <p>Planned: Day 1 final dream sequence, in-game text message system, Day 2 dreams, Day 3 story, full CG and dialogue upgrades.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Who Should Play ===== -->
+<div class="section">
+  <h2>Is You Make This House a Home Right for You?</h2>
+  <div class="suit-grid">
+    <div class="suit-col good">
+      <h4>You'll Like It If</h4>
+      <ul>
+        <li>You prefer atmospheric dread over gore and jump scares</li>
+        <li>You can't resist yandere / dark romance stories</li>
+        <li>You want a story that lingers in your head for days after you finish</li>
+        <li>You care about hand-drawn art and piano scores carrying the immersion</li>
+        <li>You're okay with some endings not giving you clear answers</li>
+      </ul>
+    </div>
+    <div class="suit-col bad">
+      <h4>Skip It If</h4>
+      <ul>
+        <li>You're under 16</li>
+        <li>You've been through a controlling relationship and haven't fully processed it</li>
+        <li>You only want traditional horror where monsters jump out at you</li>
+        <li>You need every question to have a clear explanation by the end</li>
+      </ul>
+    </div>
+  </div>
+  <div class="warning-box">
+    <p><strong>Content Warning:</strong> Drugging · Memory manipulation · Emotional abuse · Gaslighting · Imprisonment · Non-human body horror. If you are currently in or have survived a controlling relationship, please honestly assess your state before opening this game.</p>
+  </div>
+</div>
+
+<!-- ===== FAQ ===== -->
+<div class="section" id="faq">
+  <h2>You Make This House a Home — Frequently Asked Questions</h2>
+  <div class="faq-item"><h4>Is You Make This House a Home free?</h4><p>Yes. The browser version is completely free. The desktop version on itch.io can be downloaded for $0, or you can pay what you want to support the creator.</p></div>
+  <div class="faq-item"><h4>How long does You Make This House a Home take?</h4><p>One playthrough is about 2-4 hours. Collecting all endings takes roughly 10-15 hours.</p></div>
+  <div class="faq-item"><h4>Does You Make This House a Home have jumpscares?</h4><p>No. The horror doesn't come from sudden monster pop-ups. It comes from atmosphere, dialogue, and the helplessness of waking up every morning with your memory wiped clean.</p></div>
+  <div class="faq-item"><h4>How many endings does You Make This House a Home have?</h4><p>The community has identified 6 distinct routes so far. The developer has never confirmed an official number — there may be more no one has found yet.</p></div>
+  <div class="faq-item"><h4>Is Khol actually a bad person?</h4><p>Depends on how you play, and how you think. He imprisoned you — that's a fact. He's also starving himself for you — that's also a fact.</p></div>
+  <div class="faq-item"><h4>Can you romance Zeke?</h4><p>No. The developer has explicitly confirmed this. He's in love with Khol, not the protagonist. There is no love triangle route.</p></div>
+  <div class="faq-item"><h4>Is You Make This House a Home a romance game?</h4><p>No. It has romantic elements, but at its core it's psychological horror and mystery. Khol's love and his control are two sides of the same coin — you can't separate them.</p></div>
+  <div class="faq-item"><h4>Can You Make This House a Home be played on mobile?</h4><p>The browser version works on mobile browsers. Unofficial Android APKs are floating around, but they're not maintained by the developer — install at your own risk.</p></div>
+  <div class="faq-item"><h4>Can you customize the protagonist in You Make This House a Home?</h4><p>Yes. You can set a custom name and choose he / she / they pronouns. Khol and other characters will address you accordingly in-game.</p></div>
+  <div class="faq-item"><h4>What content warnings should I know about?</h4><p>Drugging, memory manipulation, emotional abuse, gaslighting, imprisonment, non-human body horror. Not recommended for players under 16. If you have trauma related to controlling relationships, please honestly assess your own state before playing.</p></div>
+</div>
+
+<!-- ===== CTA ===== -->
+<div class="cta-section">
+  <div class="cta-box">
+    <h3>Ready to Play?</h3>
+    <p>You Make This House a Home is free, runs in your browser, and takes just 2-4 hours per playthrough. Just you, Khol, and five days.</p>
+    <a href="#play" class="cta-btn">Play Free Online</a>
+  </div>
+</div>
+
+<div class="back-top"><a href="#">↑ Back to Top</a></div>
+
+<footer class="site-footer">
+  <p>Free browser games · No download, play instantly · <a href="games.html">Browse All Games</a> · <a href="category/kingdom-of-marionettes.html">Kingdom of Marionettes</a> · <a href="privacy-policy.html">Privacy Policy</a> · <a href="terms-of-service.html">Terms of Service</a></p>
+  <p style="margin-top:12px;font-size:.78rem;color:var(--muted)">2026 &copy; Games Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

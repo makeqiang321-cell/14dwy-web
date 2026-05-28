@@ -1,0 +1,5 @@
+﻿User-agent: *
+Allow: /
+Disallow: /14dwy-web/
+
+Sitemap: https://www.14dayswithyou.online/sitemap.xml
